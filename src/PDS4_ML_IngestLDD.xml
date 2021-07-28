@@ -184,30 +184,6 @@
     details of data sets used by the machine learning model.</definition>
     <element_flag>true</element_flag>
     <DD_Association>
-      <identifier_reference>Training_Set</identifier_reference>
-      <reference_type>parent_of</reference_type>
-      <minimum_occurrences>1</minimum_occurrences>
-      <maximum_occurrences>1</maximum_occurrences>
-    </DD_Association>
-    <DD_Association>
-      <identifier_reference>Test_Set</identifier_reference>
-      <reference_type>parent_of</reference_type>
-      <minimum_occurrences>0</minimum_occurrences>
-      <maximum_occurrences>1</maximum_occurrences>
-    </DD_Association>
-    <DD_Association>
-      <identifier_reference>Validation_Set</identifier_reference>
-      <reference_type>parent_of</reference_type>
-      <minimum_occurrences>0</minimum_occurrences>
-      <maximum_occurrences>1</maximum_occurrences>
-    </DD_Association>
-    <DD_Association>
-      <identifier_reference>data_set_size</identifier_reference>
-      <reference_type>attribute_of</reference_type>
-      <minimum_occurrences>1</minimum_occurrences>
-      <maximum_occurrences>1</maximum_occurrences>
-    </DD_Association>
-    <DD_Association>
       <identifier_reference>data_set_version_id</identifier_reference>
       <reference_type>attribute_of</reference_type>
       <minimum_occurrences>1</minimum_occurrences>
@@ -223,6 +199,13 @@
     family and contains attributes describing the provenance, size,
     and processing details for the machine learning model test
     set.</definition>
+    <element_flag>true</element_flag>
+    <DD_Association>
+      <identifier_reference>Image_Data_Set</identifier_reference>
+      <reference_type>parent_of</reference_type>
+      <minimum_occurrences>1</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
   </DD_Class>
   <DD_Class>
     <name>Training_Set</name>
@@ -234,6 +217,12 @@
     size, and processing details for the machine learning model
     training set.</definition> 
     <element_flag>true</element_flag>
+    <DD_Association>
+      <identifier_reference>Image_Data_Set</identifier_reference>
+      <reference_type>parent_of</reference_type>
+      <minimum_occurrences>1</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
   </DD_Class>
   <DD_Class>
     <name>Validation_Set</name>
@@ -245,6 +234,12 @@
     size, and processing details for the machine learning model
     validation set. </definition> 
     <element_flag>true</element_flag>
+    <DD_Association>
+      <identifier_reference>Image_Data_Set</identifier_reference>
+      <reference_type>parent_of</reference_type>
+      <minimum_occurrences>1</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
   </DD_Class>
   
   <!-- Trained_Machine_Learning_Model Class -->
