@@ -10,20 +10,21 @@
   <dictionary_type>Discipline</dictionary_type>
   <full_name>Wagstaff, Kiri</full_name>
   <steward_id>img</steward_id>
-  <namespace_id>tbd</namespace_id>
-  <last_modification_date_time>2021-05-05T24:00:00Z</last_modification_date_time>
+  <namespace_id>ml</namespace_id>
+  <last_modification_date_time>2021-07-28T24:00:00Z</last_modification_date_time>
 
   <!-- Attributes -->
   
   <!-- Attributes for the Image_Data_Set classes.   -->
   
   <DD_Attribute>
-    <name>test_set_size</name>
+    <name>data_set_size</name>
     <version_id>1.0</version_id>
-    <local_identifier>test_set_size</local_identifier>
+    <local_identifier>data_set_size</local_identifier>
     <nillable_flag>false</nillable_flag>
     <submitter_name>Minh Le</submitter_name>
-    <definition>The test_set_size attribute provides the number of images within the data set used for testing the machine learning model.</definition>
+    <definition>The data_set_size attribute provides the number of
+    images within the data set.</definition> 
     <DD_Value_Domain>
       <enumeration_flag>false</enumeration_flag>
       <value_data_type>ASCII_Real</value_data_type>
@@ -31,64 +32,13 @@
     </DD_Value_Domain>
   </DD_Attribute>
   <DD_Attribute>
-    <name>test_set_version_id</name>
+    <name>data_set_version_id</name>
     <version_id>1.0</version_id>
-    <local_identifier>test_set_version_id</local_identifier>
+    <local_identifier>data_set_version_id</local_identifier>
     <nillable_flag>false</nillable_flag>
     <submitter_name>Minh Le</submitter_name>
-    <definition>The test_set_version_id attribute specifies the test set version number used to test the machine learning model.</definition>
-    <DD_Value_Domain>
-      <enumeration_flag>false</enumeration_flag>
-      <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
-      <unit_of_measure_type>Units_of_None</unit_of_measure_type>
-    </DD_Value_Domain>
-  </DD_Attribute>
-  <DD_Attribute>
-    <name>training_set_size</name>
-    <version_id>1.0</version_id>
-    <local_identifier>training_set_size</local_identifier>
-    <nillable_flag>false</nillable_flag>
-    <submitter_name>Minh Le</submitter_name>
-    <definition>The training_set_size attribute specifies the number of images within the data set used to train the machine learning model.</definition>
-    <DD_Value_Domain>
-      <enumeration_flag>false</enumeration_flag>
-      <value_data_type>ASCII_Real</value_data_type>
-      <unit_of_measure_type>Units_of_None</unit_of_measure_type>
-    </DD_Value_Domain>
-  </DD_Attribute>
-  <DD_Attribute>
-    <name>training_set_version_id</name>
-    <version_id>1.0</version_id>
-    <local_identifier>training_set_version_id</local_identifier>
-    <nillable_flag>false</nillable_flag>
-    <submitter_name>Minh Le</submitter_name>
-    <definition>The training_set_version_id attribute specifies the training set version number used to train the machine learning model.</definition>
-    <DD_Value_Domain>
-      <enumeration_flag>false</enumeration_flag>
-      <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
-      <unit_of_measure_type>Units_of_None</unit_of_measure_type>
-    </DD_Value_Domain>
-  </DD_Attribute>
-  <DD_Attribute>
-    <name>validation_set_size</name>
-    <version_id>1.0</version_id>
-    <local_identifier>validation_set_size</local_identifier>
-    <nillable_flag>false</nillable_flag>
-    <submitter_name>Minh Le</submitter_name>
-    <definition>The validation_set_size attribute specifies the data set validation set used to validate the machine learning model.</definition>
-    <DD_Value_Domain>
-      <enumeration_flag>false</enumeration_flag>
-      <value_data_type>ASCII_Real</value_data_type>
-      <unit_of_measure_type>Units_of_None</unit_of_measure_type>
-    </DD_Value_Domain>
-  </DD_Attribute>
-  <DD_Attribute>
-    <name>validation_set_version_id</name>
-    <version_id>1.0</version_id>
-    <local_identifier>validation_set_version_id</local_identifier>
-    <nillable_flag>false</nillable_flag>
-    <submitter_name>Minh Le</submitter_name>
-    <definition>The validation_set_version_id attribute specifies the validation set version number used to validate the machine learning model.</definition>
+    <definition>The data_set_version_id attribute specifies the data
+    set version number.</definition> 
     <DD_Value_Domain>
       <enumeration_flag>false</enumeration_flag>
       <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
@@ -96,7 +46,7 @@
     </DD_Value_Domain>
   </DD_Attribute>
   
-  <!-- Attributes for the Machine_Learning_Algorithm classes.   -->
+  <!-- Attributes for the Machine_Learning_Algorithm class.   -->
   
   <DD_Attribute>
     <name>algorithm_learning_style</name>
@@ -104,21 +54,28 @@
     <local_identifier>algorithm_learning_style</local_identifier>
     <nillable_flag>false</nillable_flag>
     <submitter_name>Minh Le</submitter_name>
-    <definition>The algorithm_learning_style attribute describes the type of learning style adopted by the algorithm to model a problem.</definition>
+    <definition>The algorithm_learning_style attribute describes the
+    type of learning style adopted by the algorithm to model a
+    problem.</definition> 
     <DD_Value_Domain>
       <enumeration_flag>true</enumeration_flag>
       <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
       <DD_Permissible_Value>
         <value>Supervised_Learning</value>
-        <value_meaning>Supervised_Learning indicates that labeled data has been used to teach models to yield the desired output.</value_meaning>
+        <value_meaning>Supervised_Learning indicates that labeled data
+        has been used to teach models to yield the desired
+        output.</value_meaning> 
       </DD_Permissible_Value>
       <DD_Permissible_Value>
         <value>Semisupervised_Learning</value>
-        <value_meaning>Both labeled data and a large amount of unlabeled data have been used during training.</value_meaning>
+        <value_meaning>Both labeled data and a large amount of
+        unlabeled data have been used during training.</value_meaning> 
       </DD_Permissible_Value>
       <DD_Permissible_Value>
         <value>Unsupervised_Learning</value>
-        <value_meaning>The algorithm has not received any labeled data and has discovered patterns on its own from untagged input.</value_meaning>
+        <value_meaning>The algorithm has not received any labeled data
+        and has discovered patterns on its own from untagged
+        input.</value_meaning> 
       </DD_Permissible_Value>
     </DD_Value_Domain>
   </DD_Attribute>
@@ -128,13 +85,16 @@
     <local_identifier>algorithm_type</local_identifier>
     <nillable_flag>false</nillable_flag>
     <submitter_name>Minh Le</submitter_name>
-    <definition>The algorithm_type attribute describes the kind of algorithm used, such as a regression, neural network, tree, or etc.</definition>
+    <definition>The algorithm_type attribute describes the kind of
+    algorithm used, such as a regression, neural network, tree, or
+    etc.</definition> 
     <DD_Value_Domain>
       <enumeration_flag>true</enumeration_flag>
       <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
       <DD_Permissible_Value>
         <value>Convolutional_Neural_Network_Classifier</value>
-        <value_meaning>The algorithm used for image analysis is a Convolutional Neural Network (CNN) Classifier.</value_meaning>
+        <value_meaning>The algorithm used for image analysis is a
+        Convolutional Neural Network (CNN) Classifier.</value_meaning> 
       </DD_Permissible_Value>
     </DD_Value_Domain>
   </DD_Attribute>
@@ -144,48 +104,73 @@
     <local_identifier>algorithm_name</local_identifier>
     <nillable_flag>false</nillable_flag>
     <submitter_name>Minh Le</submitter_name>
-    <definition>The algorithm_name attribute specifies the name of the algorithm used.</definition>
+    <definition>The algorithm_name attribute specifies the name of the
+    algorithm used.</definition> 
     <DD_Value_Domain>
       <enumeration_flag>false</enumeration_flag>
       <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
     </DD_Value_Domain>
   </DD_Attribute>
   
-  <!-- Attributes for the Data_Set_Preparation classes.   -->
-  
+  <!-- Attributes for the Trained_Machine_Learning_Model class.   -->
+
   <DD_Attribute>
-    <name>data_preparation</name>
+    <name>trained_model_version_id</name>
     <version_id>1.0</version_id>
-    <local_identifier>data_preparation</local_identifier>
+    <local_identifier>trained_model_version_id</local_identifier>
     <nillable_flag>false</nillable_flag>
-    <submitter_name>Minh Le</submitter_name>
-    <definition>The data_preparation attribute specifies whether a data set is labeled or not.</definition>
+    <submitter_name>Kiri Wagstaff</submitter_name>
+    <definition>The trained_model_version_id attribute specifies the
+    trained model version number.</definition> 
     <DD_Value_Domain>
-      <enumeration_flag>true</enumeration_flag>
+      <enumeration_flag>false</enumeration_flag>
       <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
-      <DD_Permissible_Value>
-        <value>Labeled</value>
-        <value_meaning>The data set is labeled for Supervised or Semi-Supervised Learning.</value_meaning>
-      </DD_Permissible_Value>
-      <DD_Permissible_Value>
-        <value>Unlabeled</value>
-        <value_meaning>The data set is not labeled.</value_meaning>
-      </DD_Permissible_Value>
+      <unit_of_measure_type>Units_of_None</unit_of_measure_type>
     </DD_Value_Domain>
   </DD_Attribute>
   <DD_Attribute>
-    <name>labeling_tool_name</name>
+    <name>trained_model_name</name>
     <version_id>1.0</version_id>
-    <local_identifier>labeling_tool_name</local_identifier>
+    <local_identifier>trained_model_name</local_identifier>
     <nillable_flag>false</nillable_flag>
-    <submitter_name>Minh Le</submitter_name>
-    <definition>The labeling_tool_name attribute specifies the name of the software tool used to assist in labeling a dataset.</definition>
+    <submitter_name>Kiri Wagstaff</submitter_name>
+    <definition>The trained_model_name attribute specifies the name of the
+    model used.</definition> 
     <DD_Value_Domain>
       <enumeration_flag>false</enumeration_flag>
       <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
     </DD_Value_Domain>
   </DD_Attribute>
-  
+  <DD_Attribute>
+    <name>trained_model_metric</name>
+    <version_id>1.0</version_id>
+    <local_identifier>trained_model_metric</local_identifier>
+    <nillable_flag>false</nillable_flag>
+    <submitter_name>Kiri Wagstaff</submitter_name>
+    <definition>The trained_model_metric attribute describes the
+    metric that was used to evaluate the model's
+    performance.</definition>   
+    <DD_Value_Domain>
+      <enumeration_flag>false</enumeration_flag>
+      <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
+    </DD_Value_Domain>
+  </DD_Attribute>
+  <DD_Attribute>
+    <name>trained_model_performance</name>
+    <version_id>1.0</version_id>
+    <local_identifier>trained_model_performance</local_identifier>
+    <nillable_flag>false</nillable_flag>
+    <submitter_name>Kiri Wagstaff</submitter_name>
+    <definition>The trained_model_performance attribute reports the
+    score obtained by the model using
+    trained_model_metric.</definition>    
+    <DD_Value_Domain>
+      <enumeration_flag>false</enumeration_flag>
+      <value_data_type>ASCII_Real</value_data_type>
+      <unit_of_measure_type>Units_of_None</unit_of_measure_type>
+    </DD_Value_Domain>
+  </DD_Attribute>
+
   <!-- Classes -->
   
   <!-- Image_Data_Set Classes -->
@@ -194,29 +179,37 @@
     <version_id>1.0</version_id>
     <local_identifier>Image_Data_Set</local_identifier>
     <submitter_name>Minh Le</submitter_name>
-    <definition>The Image_Data_Set class is the container for classes and attributes describing the provenance, size and processing details of data sets used in testing, training, and validating the machine learning model.</definition>
+    <definition>The Image_Data_Set class is the container for classes
+    and attributes describing the provenance, size and processing
+    details of data sets used by the machine learning model.</definition>
     <element_flag>true</element_flag>
     <DD_Association>
-      <identifier_reference>Test_Set</identifier_reference>
-      <reference_type>subclass_of</reference_type>
-      <minimum_occurrences>0</minimum_occurrences>
-      <maximum_occurrences>1</maximum_occurrences>
-    </DD_Association>
-    <DD_Association>
       <identifier_reference>Training_Set</identifier_reference>
-      <reference_type>subclass_of</reference_type>
+      <reference_type>parent_of</reference_type>
       <minimum_occurrences>1</minimum_occurrences>
       <maximum_occurrences>1</maximum_occurrences>
     </DD_Association>
     <DD_Association>
-      <identifier_reference>Validation_Set</identifier_reference>
-      <reference_type>subclass_of</reference_type>
+      <identifier_reference>Test_Set</identifier_reference>
+      <reference_type>parent_of</reference_type>
       <minimum_occurrences>0</minimum_occurrences>
       <maximum_occurrences>1</maximum_occurrences>
     </DD_Association>
     <DD_Association>
-      <identifier_reference>Data_Set_Preparation</identifier_reference>
-      <reference_type>subclass_of</reference_type>
+      <identifier_reference>Validation_Set</identifier_reference>
+      <reference_type>parent_of</reference_type>
+      <minimum_occurrences>0</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+      <identifier_reference>data_set_size</identifier_reference>
+      <reference_type>attribute_of</reference_type>
+      <minimum_occurrences>1</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+      <identifier_reference>data_set_version_id</identifier_reference>
+      <reference_type>attribute_of</reference_type>
       <minimum_occurrences>1</minimum_occurrences>
       <maximum_occurrences>1</maximum_occurrences>
     </DD_Association>
@@ -226,107 +219,32 @@
     <version_id>1.0</version_id>
     <local_identifier>Test_Set</local_identifier>
     <submitter_name>Minh Le</submitter_name>
-    <definition>The Test_Set class belongs to the Image_Data_Set class family and contains attributes describing the provenance, size, and processing details for the machine learning model test set.</definition>
-    <element_flag>true</element_flag>
-    <DD_Association>
-      <identifier_reference>Image_Data_Set</identifier_reference>
-      <reference_type>parent_of</reference_type>
-      <minimum_occurrences>0</minimum_occurrences>
-      <maximum_occurrences>1</maximum_occurrences>
-    </DD_Association>
-    <DD_Association>
-      <identifier_reference>test_set_size</identifier_reference>
-      <reference_type>attribute_of</reference_type>
-      <minimum_occurrences>0</minimum_occurrences>
-      <maximum_occurrences>1</maximum_occurrences>
-    </DD_Association>
-    <DD_Association>
-      <identifier_reference>test_set_version_id</identifier_reference>
-      <reference_type>attribute_of</reference_type>
-      <minimum_occurrences>0</minimum_occurrences>
-      <maximum_occurrences>1</maximum_occurrences>
-    </DD_Association>
+    <definition>The Test_Set class belongs to the Image_Data_Set class
+    family and contains attributes describing the provenance, size,
+    and processing details for the machine learning model test
+    set.</definition>
   </DD_Class>
   <DD_Class>
     <name>Training_Set</name>
     <version_id>1.0</version_id>
     <local_identifier>Training_Set</local_identifier>
     <submitter_name>Minh Le</submitter_name>
-    <definition>The Training_Set class belongs to the Image_Data_Set class family and contains attributes that describe the provenance, size, and processing details for the machine learning model training set.</definition>
+    <definition>The Training_Set class belongs to the Image_Data_Set
+    class family and contains attributes that describe the provenance,
+    size, and processing details for the machine learning model
+    training set.</definition> 
     <element_flag>true</element_flag>
-    <DD_Association>
-      <identifier_reference>Image_Data_Set</identifier_reference>
-      <reference_type>parent_of</reference_type>
-      <minimum_occurrences>1</minimum_occurrences>
-      <maximum_occurrences>1</maximum_occurrences>
-    </DD_Association>
-    <DD_Association>
-      <identifier_reference>training_set_size</identifier_reference>
-      <reference_type>attribute_of</reference_type>
-      <minimum_occurrences>1</minimum_occurrences>
-      <maximum_occurrences>1</maximum_occurrences>
-    </DD_Association>
-    <DD_Association>
-      <identifier_reference>training_set_version_id</identifier_reference>
-      <reference_type>attribute_of</reference_type>
-      <minimum_occurrences>1</minimum_occurrences>
-      <maximum_occurrences>1</maximum_occurrences>
-    </DD_Association>
   </DD_Class>
   <DD_Class>
     <name>Validation_Set</name>
     <version_id>1.0</version_id>
     <local_identifier>Validation_Set</local_identifier>
     <submitter_name>Minh Le</submitter_name>
-    <definition>The Validation_Set class belongs to the Image_Data_Set class family and contains attributes that describe the provenance, size, and processing details for the machine learning model validation set. </definition>
+    <definition>The Validation_Set class belongs to the Image_Data_Set
+    class family and contains attributes that describe the provenance,
+    size, and processing details for the machine learning model
+    validation set. </definition> 
     <element_flag>true</element_flag>
-    <DD_Association>
-      <identifier_reference>Image_Data_Set</identifier_reference>
-      <reference_type>parent_of</reference_type>
-      <minimum_occurrences>0</minimum_occurrences>
-      <maximum_occurrences>1</maximum_occurrences>
-    </DD_Association>
-    <DD_Association>
-      <identifier_reference>validation_set_size</identifier_reference>
-      <reference_type>attribute_of</reference_type>
-      <minimum_occurrences>0</minimum_occurrences>
-      <maximum_occurrences>1</maximum_occurrences>
-    </DD_Association>
-    <DD_Association>
-      <identifier_reference>validation_set_version_id</identifier_reference>
-      <reference_type>attribute_of</reference_type>
-      <minimum_occurrences>0</minimum_occurrences>
-      <maximum_occurrences>1</maximum_occurrences>
-    </DD_Association>
-  </DD_Class>
-  
-  <!-- Data_Set_Preparation Class -->
-  
-  <DD_Class>
-    <name>Data_Set_Preparation</name>
-    <version_id>1.0</version_id>
-    <local_identifier>Data_Set_Preparation</local_identifier>
-    <submitter_name>Minh Le</submitter_name>
-    <definition>The Data_Set_Preparation class contains attributes describing how the data set has been prepared for training, testing, and validation.</definition>
-    <element_flag>true</element_flag>
-    <DD_Association>
-      <identifier_reference>data_preparation</identifier_reference>
-      <reference_type>attribute_of</reference_type>
-      <minimum_occurrences>1</minimum_occurrences>
-      <maximum_occurrences>1</maximum_occurrences>
-    </DD_Association>
-    <DD_Association>
-      <identifier_reference>labeling_technique</identifier_reference>
-      <reference_type>attribute_of</reference_type>
-      <minimum_occurrences>1</minimum_occurrences>
-      <maximum_occurrences>1</maximum_occurrences>
-    </DD_Association>
-    <DD_Association>
-      <identifier_reference>labeling_tool_name</identifier_reference>
-      <reference_type>attribute_of</reference_type>
-      <minimum_occurrences>0</minimum_occurrences>
-      <maximum_occurrences>0</maximum_occurrences>
-    </DD_Association>
   </DD_Class>
   
   <!-- Trained_Machine_Learning_Model Class -->
@@ -335,7 +253,10 @@
     <version_id>1.0</version_id>
     <local_identifier>Trained_Machine_Learning_Model</local_identifier>
     <submitter_name>Minh Le</submitter_name>
-    <definition>The Trained_Machine_Learning_Model class is a container for classes and and attributes describing the various parameters specified to the Machine Learning Algorithm.</definition>
+    <definition>The Trained_Machine_Learning_Model class is a
+    container for classes and and attributes describing the various
+    parameters specified to the Machine Learning
+    Algorithm.</definition> 
     <element_flag>true</element_flag>
     <DD_Association>
       <identifier_reference>trained_model_version_id</identifier_reference>
@@ -350,7 +271,13 @@
       <maximum_occurrences>1</maximum_occurrences>
     </DD_Association>
     <DD_Association>
-      <identifier_reference>trained_model_accuracy_score</identifier_reference>
+      <identifier_reference>trained_model_metric</identifier_reference>
+      <reference_type>attribute_of</reference_type>
+      <minimum_occurrences>1</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+      <identifier_reference>trained_model_performance</identifier_reference>
       <reference_type>attribute_of</reference_type>
       <minimum_occurrences>1</minimum_occurrences>
       <maximum_occurrences>1</maximum_occurrences>
@@ -364,7 +291,9 @@
     <version_id>1.0</version_id>
     <local_identifier>Machine_Learning_Algorithm</local_identifier>
     <submitter_name>Minh Le</submitter_name>
-    <definition>The Machine_Learning_Algorithm class is a container for classes and and attributes describing the algorithm type and learning style used.</definition>
+    <definition>The Machine_Learning_Algorithm class is a container
+    for classes and and attributes describing the algorithm type and
+    learning style used.</definition> 
     <element_flag>true</element_flag>
     <DD_Association>
       <identifier_reference>algorithm_learning_style</identifier_reference>
