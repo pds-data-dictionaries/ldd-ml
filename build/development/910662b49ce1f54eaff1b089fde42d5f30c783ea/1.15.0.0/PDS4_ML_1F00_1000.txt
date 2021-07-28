@@ -1,0 +1,218 @@
+PDS4 Local Data Dictionary Processing Report
+
+Configuration:
+   LDDTool Version        13.0.2
+   LDD Version Id:        1.0.0.0
+   LDD Label Version Id:  1.0
+   LDD Discipline (T/F):  true
+   LDD Namespace URL:     http://pds.nasa.gov/pds4/
+   LDD URN Prefix:        urn:nasa:pds:
+   Time                   Wed Jul 28 19:35:12 UTC 2021
+   Common Schema          [PDS4_PDS_1F00.xsd]
+   Common Schematron      [PDS4_PDS_1F00.sch]
+   IM Version Id:         1.15.0.0
+   IM Namespace Id:       pds
+   IM Label Version Id:   1.0
+   IM Object Model        [UpperModel.pont]
+   IM Data Dictionary     [dd11179.pins]
+   IM Configuration File  [MDPTNConfigClassDisp.xml]
+   IM Glossary            [Glossary.pins]
+   IM Document Spec       [DMDocument.pins]
+
+Parameters:
+   Input File             [/home/runner/work/ldd-ml/ldd-ml/src/PDS4_ML_IngestLDD.xml]
+   PDS Processing         true
+   LDD Processing         true
+   Discipline LDD         true
+   Mission LDD            false
+   Write Attr Elements    false
+   Merge with Master      false
+
+Summary:
+   Classes                6
+   Attributes             9
+   Associations           14
+   Error messages         0
+   Warning messages       0
+   Information messages   0
+
+Detailed validation messages
+
+Parsed Input - Header:
+   LDD Name               Machine Learning Analysis Dictionary
+   LDD Version            1.0.0.0
+   Full Name              Wagstaff, Kiri
+   Steward                img
+   Namespace Id           ml
+   Comment                _TBD_Ingest_LDD
+   Last Modification Time 2021-07-28T24:00:00Z
+   PDS4 Merge Flag        false
+
+Parsed Input - Attributes:
+
+   name                   data_set_size
+   version                1.0
+   value data type        ASCII_Real
+   description            The data_set_size attribute provides the number of images within the data set.
+
+   name                   data_set_version_id
+   version                1.15
+   value data type        ASCII_Short_String_Collapsed
+   description            The data_set_version_id attribute specifies the data set version number.
+
+   name                   algorithm_learning_style
+   version                1.15
+   value data type        ASCII_Short_String_Collapsed
+   description            The algorithm_learning_style attribute describes the type of learning style adopted by the algorithm to model a problem.
+
+   name                   algorithm_type
+   version                1.15
+   value data type        ASCII_Short_String_Collapsed
+   description            The algorithm_type attribute describes the kind of algorithm used, such as a regression, neural network, tree, or etc.
+
+   name                   algorithm_name
+   version                1.15
+   value data type        ASCII_Short_String_Collapsed
+   description            The algorithm_name attribute specifies the name of the algorithm used.
+
+   name                   trained_model_version_id
+   version                1.15
+   value data type        ASCII_Short_String_Collapsed
+   description            The trained_model_version_id attribute specifies the trained model version number.
+
+   name                   trained_model_name
+   version                1.15
+   value data type        ASCII_Short_String_Collapsed
+   description            The trained_model_name attribute specifies the name of the model used.
+
+   name                   trained_model_metric
+   version                1.15
+   value data type        ASCII_Short_String_Collapsed
+   description            The trained_model_metric attribute describes the metric that was used to evaluate the model's performance.
+
+   name                   trained_model_performance
+   version                1.15
+   value data type        ASCII_Real
+   description            The trained_model_performance attribute reports the score obtained by the model using trained_model_metric.
+
+Parsed Input - Classes:
+
+   name                   Image_Data_Set
+   description            The Image_Data_Set class is the container for classes and attributes describing the provenance, size and processing details of data sets used by the machine learning model.
+   is abstract            false
+   is choice              false
+   subclass of            USER
+
+   Associations
+
+      local identifier      data_set_version_id
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+   name                   Training_Set
+   description            The Training_Set class belongs to the Image_Data_Set class family and contains attributes that describe the provenance, size, and processing details for the machine learning model training set.
+   is abstract            false
+   is choice              false
+   subclass of            Image_Data_Set
+
+   Associations
+
+      local identifier      Image_Data_Set
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        parent_of
+
+   name                   Validation_Set
+   description            The Validation_Set class belongs to the Image_Data_Set class family and contains attributes that describe the provenance, size, and processing details for the machine learning model validation set. 
+   is abstract            false
+   is choice              false
+   subclass of            Image_Data_Set
+
+   Associations
+
+      local identifier      Image_Data_Set
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        parent_of
+
+   name                   Test_Set
+   description            The Test_Set class belongs to the Image_Data_Set class family and contains attributes describing the provenance, size, and processing details for the machine learning model test set.
+   is abstract            false
+   is choice              false
+   subclass of            Image_Data_Set
+
+   Associations
+
+      local identifier      Image_Data_Set
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        parent_of
+
+   name                   Trained_Machine_Learning_Model
+   description            The Trained_Machine_Learning_Model class is a container for classes and and attributes describing the various parameters specified to the Machine Learning Algorithm.
+   is abstract            false
+   is choice              false
+   subclass of            USER
+
+   Associations
+
+      local identifier      trained_model_version_id
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      trained_model_name
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      trained_model_metric
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      trained_model_performance
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      Training_Set
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        component_of
+
+      local identifier      Validation_Set
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        component_of
+
+      local identifier      Test_Set
+      minimum occurrences   0
+      maximum occurrences   1
+      reference type        component_of
+
+   name                   Machine_Learning_Algorithm
+   description            The Machine_Learning_Algorithm class is a container for classes and and attributes describing the algorithm type and learning style used.
+   is abstract            false
+   is choice              false
+   subclass of            USER
+
+   Associations
+
+      local identifier      algorithm_learning_style
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      algorithm_type
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      algorithm_name
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+End of Report
