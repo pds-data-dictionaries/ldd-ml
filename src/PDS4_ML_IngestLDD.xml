@@ -191,23 +191,6 @@
     </DD_Association>
   </DD_Class>
   <DD_Class>
-    <name>Test_Set</name>
-    <version_id>1.0</version_id>
-    <local_identifier>Test_Set</local_identifier>
-    <submitter_name>Minh Le</submitter_name>
-    <definition>The Test_Set class belongs to the Image_Data_Set class
-    family and contains attributes describing the provenance, size,
-    and processing details for the machine learning model test
-    set.</definition>
-    <element_flag>true</element_flag>
-    <DD_Association>
-      <identifier_reference>Image_Data_Set</identifier_reference>
-      <reference_type>parent_of</reference_type>
-      <minimum_occurrences>1</minimum_occurrences>
-      <maximum_occurrences>1</maximum_occurrences>
-    </DD_Association>
-  </DD_Class>
-  <DD_Class>
     <name>Training_Set</name>
     <version_id>1.0</version_id>
     <local_identifier>Training_Set</local_identifier>
@@ -233,6 +216,23 @@
     class family and contains attributes that describe the provenance,
     size, and processing details for the machine learning model
     validation set. </definition> 
+    <element_flag>true</element_flag>
+    <DD_Association>
+      <identifier_reference>Image_Data_Set</identifier_reference>
+      <reference_type>parent_of</reference_type>
+      <minimum_occurrences>1</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+  </DD_Class>
+  <DD_Class>
+    <name>Test_Set</name>
+    <version_id>1.0</version_id>
+    <local_identifier>Test_Set</local_identifier>
+    <submitter_name>Minh Le</submitter_name>
+    <definition>The Test_Set class belongs to the Image_Data_Set class
+    family and contains attributes describing the provenance, size,
+    and processing details for the machine learning model test
+    set.</definition>
     <element_flag>true</element_flag>
     <DD_Association>
       <identifier_reference>Image_Data_Set</identifier_reference>
