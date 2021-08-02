@@ -206,7 +206,7 @@
     class family and contains attributes that describe the provenance,
     size, and processing details for the machine learning model
     training set.</definition> 
-    <element_flag>true</element_flag>
+    <element_flag>false</element_flag>
     <DD_Association>
       <identifier_reference>Image_Data_Set</identifier_reference>
       <reference_type>parent_of</reference_type>
@@ -223,7 +223,7 @@
     class family and contains attributes that describe the provenance,
     size, and processing details for the machine learning model
     validation set. </definition> 
-    <element_flag>true</element_flag>
+    <element_flag>false</element_flag>
     <DD_Association>
       <identifier_reference>Image_Data_Set</identifier_reference>
       <reference_type>parent_of</reference_type>
@@ -240,7 +240,7 @@
     family and contains attributes describing the provenance, size,
     and processing details for the machine learning model test
     set.</definition>
-    <element_flag>true</element_flag>
+    <element_flag>false</element_flag>
     <DD_Association>
       <identifier_reference>Image_Data_Set</identifier_reference>
       <reference_type>parent_of</reference_type>
