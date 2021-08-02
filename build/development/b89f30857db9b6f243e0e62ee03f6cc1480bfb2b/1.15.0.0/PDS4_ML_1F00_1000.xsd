@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!-- PDS4 XML/Schema for Name Space Id:ml  Version:1.0.0.0 - Wed Jul 28 19:35:12 UTC 2021 -->
+  <!-- PDS4 XML/Schema for Name Space Id:ml  Version:1.0.0.0 - Mon Aug 02 17:12:55 UTC 2021 -->
   <!-- Generated from the PDS4 Information Model Version 1.15.0.0 - System Build 11a -->
   <!-- *** This PDS4 product schema is an operational deliverable. *** -->
   <!--                                                                           -->
@@ -24,12 +24,8 @@ _TBD_Ingest_LDD
     </xs:documentation>
   </xs:annotation>
  
-  <xs:element name="Image_Data_Set" type="ml:Image_Data_Set"> </xs:element>
   <xs:element name="Machine_Learning_Algorithm" type="ml:Machine_Learning_Algorithm"> </xs:element>
-  <xs:element name="Test_Set" type="ml:Test_Set"> </xs:element>
   <xs:element name="Trained_Machine_Learning_Model" type="ml:Trained_Machine_Learning_Model"> </xs:element>
-  <xs:element name="Training_Set" type="ml:Training_Set"> </xs:element>
-  <xs:element name="Validation_Set" type="ml:Validation_Set"> </xs:element>
 
   <xs:complexType name="Image_Data_Set">
     <xs:annotation>
@@ -40,6 +36,7 @@ _TBD_Ingest_LDD
     </xs:annotation>
     <xs:sequence>
       <xs:element name="data_set_version_id" type="ml:data_set_version_id" minOccurs="1" maxOccurs="1"> </xs:element>
+      <xs:element name="data_set_size" type="ml:data_set_size" minOccurs="1" maxOccurs="1"> </xs:element>
     </xs:sequence>
   </xs:complexType>
 
@@ -71,6 +68,7 @@ _TBD_Ingest_LDD
       <xs:restriction base="ml:Image_Data_Set">
         <xs:sequence>
           <xs:element name="data_set_version_id" type="ml:data_set_version_id" minOccurs="1" maxOccurs="1"> </xs:element>
+          <xs:element name="data_set_size" type="ml:data_set_size" minOccurs="1" maxOccurs="1"> </xs:element>
         </xs:sequence>
       </xs:restriction>
     </xs:complexContent>
@@ -88,9 +86,9 @@ _TBD_Ingest_LDD
       <xs:element name="trained_model_name" type="ml:trained_model_name" minOccurs="1" maxOccurs="1"> </xs:element>
       <xs:element name="trained_model_metric" type="ml:trained_model_metric" minOccurs="1" maxOccurs="1"> </xs:element>
       <xs:element name="trained_model_performance" type="ml:trained_model_performance" minOccurs="1" maxOccurs="1"> </xs:element>
-      <xs:element ref="ml:Training_Set" minOccurs="1" maxOccurs="1"> </xs:element>
-      <xs:element ref="ml:Validation_Set" minOccurs="0" maxOccurs="1"> </xs:element>
-      <xs:element ref="ml:Test_Set" minOccurs="0" maxOccurs="1"> </xs:element>
+      <xs:element name="Training_Set" type="ml:Training_Set" minOccurs="1" maxOccurs="1"> </xs:element>
+      <xs:element name="Validation_Set" type="ml:Validation_Set" minOccurs="0" maxOccurs="1"> </xs:element>
+      <xs:element name="Test_Set" type="ml:Test_Set" minOccurs="0" maxOccurs="1"> </xs:element>
     </xs:sequence>
   </xs:complexType>
 
@@ -105,6 +103,7 @@ _TBD_Ingest_LDD
       <xs:restriction base="ml:Image_Data_Set">
         <xs:sequence>
           <xs:element name="data_set_version_id" type="ml:data_set_version_id" minOccurs="1" maxOccurs="1"> </xs:element>
+          <xs:element name="data_set_size" type="ml:data_set_size" minOccurs="1" maxOccurs="1"> </xs:element>
         </xs:sequence>
       </xs:restriction>
     </xs:complexContent>
@@ -121,6 +120,7 @@ _TBD_Ingest_LDD
       <xs:restriction base="ml:Image_Data_Set">
         <xs:sequence>
           <xs:element name="data_set_version_id" type="ml:data_set_version_id" minOccurs="1" maxOccurs="1"> </xs:element>
+          <xs:element name="data_set_size" type="ml:data_set_size" minOccurs="1" maxOccurs="1"> </xs:element>
         </xs:sequence>
       </xs:restriction>
     </xs:complexContent>
@@ -166,6 +166,17 @@ _TBD_Ingest_LDD
     <xs:restriction base="pds:ASCII_Short_String_Collapsed">
      <xs:minLength value="1"/>
      <xs:maxLength value="255"/>
+	   </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="data_set_size">
+    <xs:annotation>
+      <xs:documentation>The data_set_size attribute provides the number
+        of images within the data set.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="pds:ASCII_Real">
+     <xs:minInclusive value="-1.7976931348623157e308"/>
+     <xs:maxInclusive value="1.7976931348623157e308"/>
 	   </xs:restriction>
   </xs:simpleType>
 
