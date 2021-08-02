@@ -7,7 +7,7 @@ Configuration:
    LDD Discipline (T/F):  true
    LDD Namespace URL:     http://pds.nasa.gov/pds4/
    LDD URN Prefix:        urn:nasa:pds:
-   Time                   Wed Jul 28 19:35:12 UTC 2021
+   Time                   Mon Aug 02 17:12:55 UTC 2021
    Common Schema          [PDS4_PDS_1F00.xsd]
    Common Schematron      [PDS4_PDS_1F00.sch]
    IM Version Id:         1.15.0.0
@@ -31,7 +31,7 @@ Parameters:
 Summary:
    Classes                6
    Attributes             9
-   Associations           14
+   Associations           15
    Error messages         0
    Warning messages       0
    Information messages   0
@@ -51,7 +51,7 @@ Parsed Input - Header:
 Parsed Input - Attributes:
 
    name                   data_set_size
-   version                1.0
+   version                1.15
    value data type        ASCII_Real
    description            The data_set_size attribute provides the number of images within the data set.
 
@@ -99,13 +99,18 @@ Parsed Input - Classes:
 
    name                   Image_Data_Set
    description            The Image_Data_Set class is the container for classes and attributes describing the provenance, size and processing details of data sets used by the machine learning model.
-   is abstract            false
+   is abstract            true
    is choice              false
    subclass of            USER
 
    Associations
 
       local identifier      data_set_version_id
+      minimum occurrences   1
+      maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      data_set_size
       minimum occurrences   1
       maximum occurrences   1
       reference type        attribute_of
