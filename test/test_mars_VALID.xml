@@ -3,7 +3,6 @@
 <!-- NOTE: DO NOT INCLUDE SPECIFIC SCHEMATRONS IN LABEL. THEY WILL BE ADDED VIA PIPELINE -->
 
 <Product_Observational xmlns="http://pds.nasa.gov/pds4/pds/v1" 
-  xmlns:example="http://pds.nasa.gov/pds4/example/v1"  
   xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
   xmlns:ml="http://pds.nasa.gov/pds4/ml/v1"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
