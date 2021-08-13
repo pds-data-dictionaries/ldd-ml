@@ -10,7 +10,7 @@
   <name>Machine Learning Analysis Dictionary</name>
   <ldd_version_id>1.0.0.0</ldd_version_id>
   <dictionary_type>Discipline</dictionary_type>
-  <full_name>Wagstaff, Kiri</full_name>
+  <full_name>Wagstaff, Kiri L.</full_name>
   <steward_id>img</steward_id>
   <namespace_id>ml</namespace_id>
   <last_modification_date_time>2021-08-02T18:28:00Z</last_modification_date_time>
@@ -121,7 +121,7 @@
     <version_id>1.0</version_id>
     <local_identifier>trained_model_version_id</local_identifier>
     <nillable_flag>false</nillable_flag>
-    <submitter_name>Kiri Wagstaff</submitter_name>
+    <submitter_name>Kiri L. Wagstaff</submitter_name>
     <definition>The trained_model_version_id attribute specifies the
     trained model version number.</definition> 
     <DD_Value_Domain>
@@ -135,7 +135,7 @@
     <version_id>1.0</version_id>
     <local_identifier>trained_model_name</local_identifier>
     <nillable_flag>false</nillable_flag>
-    <submitter_name>Kiri Wagstaff</submitter_name>
+    <submitter_name>Kiri L. Wagstaff</submitter_name>
     <definition>The trained_model_name attribute specifies the name of the
     model used.</definition> 
     <DD_Value_Domain>
@@ -148,7 +148,7 @@
     <version_id>1.0</version_id>
     <local_identifier>trained_model_metric</local_identifier>
     <nillable_flag>false</nillable_flag>
-    <submitter_name>Kiri Wagstaff</submitter_name>
+    <submitter_name>Kiri L. Wagstaff</submitter_name>
     <definition>The trained_model_metric attribute describes the
     metric that was used to evaluate the model's
     performance.</definition>   
@@ -162,7 +162,7 @@
     <version_id>1.0</version_id>
     <local_identifier>trained_model_performance</local_identifier>
     <nillable_flag>false</nillable_flag>
-    <submitter_name>Kiri Wagstaff</submitter_name>
+    <submitter_name>Kiri L. Wagstaff</submitter_name>
     <definition>The trained_model_performance attribute reports the
     score obtained by the model using
     trained_model_metric.</definition>    
@@ -261,7 +261,7 @@
     container for classes and and attributes describing the various
     parameters specified to the Machine Learning
     Algorithm.</definition> 
-    <element_flag>true</element_flag>
+    <element_flag>false</element_flag>
     <DD_Association>
       <identifier_reference>trained_model_version_id</identifier_reference>
       <reference_type>attribute_of</reference_type>
@@ -316,7 +316,7 @@
     <definition>The Machine_Learning_Algorithm class is a container
     for classes and and attributes describing the algorithm type and
     learning style used.</definition> 
-    <element_flag>true</element_flag>
+    <element_flag>false</element_flag>
     <DD_Association>
       <identifier_reference>algorithm_learning_style</identifier_reference>
       <reference_type>attribute_of</reference_type>
@@ -334,6 +334,29 @@
       <reference_type>attribute_of</reference_type>
       <minimum_occurrences>1</minimum_occurrences>
       <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+  </DD_Class>
+
+  <DD_Class>
+    <name>Machine_Learning</name>
+    <version_id>1.0</version_id>
+    <submitter_name>Kiri L. Wagstaff</submitter_name>
+    <definition>The Machine_Learning class is a container for all
+    machine learning information in the label.
+    </definition>
+    <abstract_flag>false</abstract_flag>
+    <element_flag>true</element_flag>
+    <DD_Association>
+      <identifier_reference>Trained_Machine_Learning_Model</identifier_reference>
+      <reference_type>component_of</reference_type>
+      <minimum_occurrences>1</minimum_occurrences>
+      <maximum_occurrences>*</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+      <identifier_reference>Machine_Learning_Algorithm</identifier_reference>
+      <reference_type>component_of</reference_type>
+      <minimum_occurrences>1</minimum_occurrences>
+      <maximum_occurrences>*</maximum_occurrences>
     </DD_Association>
   </DD_Class>
   
