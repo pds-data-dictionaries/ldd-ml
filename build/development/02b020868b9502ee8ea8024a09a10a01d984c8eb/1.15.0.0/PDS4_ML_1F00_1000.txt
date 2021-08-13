@@ -7,7 +7,7 @@ Configuration:
    LDD Discipline (T/F):  true
    LDD Namespace URL:     http://pds.nasa.gov/pds4/
    LDD URN Prefix:        urn:nasa:pds:
-   Time                   Mon Aug 02 18:30:59 UTC 2021
+   Time                   Fri Aug 13 18:11:18 UTC 2021
    Common Schema          [PDS4_PDS_1F00.xsd]
    Common Schematron      [PDS4_PDS_1F00.sch]
    IM Version Id:         1.15.0.0
@@ -29,9 +29,9 @@ Parameters:
    Merge with Master      false
 
 Summary:
-   Classes                6
+   Classes                7
    Attributes             9
-   Associations           15
+   Associations           17
    Error messages         0
    Warning messages       0
    Information messages   0
@@ -41,7 +41,7 @@ Detailed validation messages
 Parsed Input - Header:
    LDD Name               Machine Learning Analysis Dictionary
    LDD Version            1.0.0.0
-   Full Name              Wagstaff, Kiri
+   Full Name              Wagstaff, Kiri L.
    Steward                img
    Namespace Id           ml
    Comment                _TBD_Ingest_LDD
@@ -219,5 +219,23 @@ Parsed Input - Classes:
       minimum occurrences   1
       maximum occurrences   1
       reference type        attribute_of
+
+   name                   Machine_Learning
+   description            The Machine_Learning class is a container for all machine learning information in the label. 
+   is abstract            false
+   is choice              false
+   subclass of            USER
+
+   Associations
+
+      local identifier      Trained_Machine_Learning_Model
+      minimum occurrences   1
+      maximum occurrences   *
+      reference type        component_of
+
+      local identifier      Machine_Learning_Algorithm
+      minimum occurrences   1
+      maximum occurrences   *
+      reference type        component_of
 
 End of Report

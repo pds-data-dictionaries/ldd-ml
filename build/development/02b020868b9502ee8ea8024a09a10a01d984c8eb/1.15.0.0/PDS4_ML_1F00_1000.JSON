@@ -4,7 +4,7 @@
       "Title": "PDS4 Data Dictionary" ,
       "IM Version": "1.15.0.0" ,
       "LDD Version": "1.0.0.0" ,
-      "Date": "Mon Aug 02 18:30:59 UTC 2021" ,
+      "Date": "Fri Aug 13 18:11:18 UTC 2021" ,
       "Description": "This document is a dump of the contents of the PDS4 Data Dictionary" ,
       "namespaces": ["pds:", "ml:"] ,
       "classDictionary": [
@@ -49,6 +49,53 @@
                 "classOrder": "1020" ,
                 "attributeId": [
                   "0001_NASA_PDS_1.ml.Image_Data_Set.ml.data_set_size"
+                 ]
+              }
+            }
+           ]
+          }
+        }
+      , {
+          "class": {
+            "identifier": "0001_NASA_PDS_1.ml.Machine_Learning" ,
+            "title": "Machine_Learning" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "ml" ,
+            "steward": "img" ,
+            "versionId": "1.0.0.0" ,
+            "isAbstract": "false" ,
+            "isDeprecated": "false" ,
+            "description": "The Machine_Learning class is a container for all machine learning information in the label. "
+              , "associationList": [
+             {"association": {
+                "identifier": "0001_NASA_PDS_1.ml.Machine_Learning.ml.Trained_Machine_Learning_Model" ,
+                "title": "Trained_Machine_Learning_Model" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "*" ,
+                "classOrder": "1010" ,
+                "classId": [
+                  "0001_NASA_PDS_1.ml.Trained_Machine_Learning_Model"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.ml.Machine_Learning.ml.Machine_Learning_Algorithm" ,
+                "title": "Machine_Learning_Algorithm" ,
+                "assocType": "component_of" ,
+                "isAttribute": "false" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "*" ,
+                "classOrder": "1020" ,
+                "classId": [
+                  "0001_NASA_PDS_1.ml.Machine_Learning_Algorithm"
                  ]
               }
             }
