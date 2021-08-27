@@ -4,24 +4,24 @@
       "Title": "PDS4 Data Dictionary" ,
       "IM Version": "1.15.0.0" ,
       "LDD Version": "1.0.0.0" ,
-      "Date": "Fri Aug 27 18:54:37 UTC 2021" ,
+      "Date": "Fri Aug 27 19:33:01 UTC 2021" ,
       "Description": "This document is a dump of the contents of the PDS4 Data Dictionary" ,
       "namespaces": ["pds:", "ml:"] ,
       "classDictionary": [
         {
           "class": {
-            "identifier": "0001_NASA_PDS_1.ml.Image_Data_Set" ,
-            "title": "Image_Data_Set" ,
+            "identifier": "0001_NASA_PDS_1.ml.Data_Set" ,
+            "title": "Data_Set" ,
             "registrationAuthorityId": "0001_NASA_PDS_1" ,
             "nameSpaceId": "ml" ,
             "steward": "img" ,
             "versionId": "1.0.0.0" ,
             "isAbstract": "true" ,
             "isDeprecated": "false" ,
-            "description": "The Image_Data_Set class is the container for classes and attributes describing the provenance, size and processing details of data sets used by the machine learning model."
+            "description": "The Data_Set class is the container for classes and attributes describing the provenance, size and processing details of data sets used by the machine learning model."
               , "associationList": [
              {"association": {
-                "identifier": "0001_NASA_PDS_1.ml.Image_Data_Set.ml.data_set_version_id" ,
+                "identifier": "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_version_id" ,
                 "title": "data_set_version_id" ,
                 "assocType": "attribute_of" ,
                 "isAttribute": "true" ,
@@ -32,12 +32,12 @@
                 "maximumCardinality": "1" ,
                 "classOrder": "1010" ,
                 "attributeId": [
-                  "0001_NASA_PDS_1.ml.Image_Data_Set.ml.data_set_version_id"
+                  "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_version_id"
                  ]
               }
             }
            , {"association": {
-                "identifier": "0001_NASA_PDS_1.ml.Image_Data_Set.ml.data_set_size" ,
+                "identifier": "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_size" ,
                 "title": "data_set_size" ,
                 "assocType": "attribute_of" ,
                 "isAttribute": "true" ,
@@ -48,7 +48,7 @@
                 "maximumCardinality": "1" ,
                 "classOrder": "1020" ,
                 "attributeId": [
-                  "0001_NASA_PDS_1.ml.Image_Data_Set.ml.data_set_size"
+                  "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_size"
                  ]
               }
             }
@@ -175,10 +175,10 @@
             "versionId": "1.0.0.0" ,
             "isAbstract": "false" ,
             "isDeprecated": "false" ,
-            "description": "The Test_Set class belongs to the Image_Data_Set class family and contains attributes describing the provenance, size, and processing details for the machine learning model test set."
+            "description": "The Test_Set class belongs to the Data_Set class family and contains attributes describing the provenance, size, and processing details for the machine learning model test set."
               , "associationList": [
              {"association": {
-                "identifier": "0001_NASA_PDS_1.ml.Image_Data_Set.ml.data_set_version_id" ,
+                "identifier": "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_version_id" ,
                 "title": "data_set_version_id" ,
                 "assocType": "attribute_of" ,
                 "isAttribute": "true" ,
@@ -189,12 +189,12 @@
                 "maximumCardinality": "1" ,
                 "classOrder": "1010" ,
                 "attributeId": [
-                  "0001_NASA_PDS_1.ml.Image_Data_Set.ml.data_set_version_id"
+                  "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_version_id"
                  ]
               }
             }
            , {"association": {
-                "identifier": "0001_NASA_PDS_1.ml.Image_Data_Set.ml.data_set_size" ,
+                "identifier": "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_size" ,
                 "title": "data_set_size" ,
                 "assocType": "attribute_of" ,
                 "isAttribute": "true" ,
@@ -205,7 +205,7 @@
                 "maximumCardinality": "1" ,
                 "classOrder": "1020" ,
                 "attributeId": [
-                  "0001_NASA_PDS_1.ml.Image_Data_Set.ml.data_set_size"
+                  "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_size"
                  ]
               }
             }
@@ -349,10 +349,10 @@
             "versionId": "1.0.0.0" ,
             "isAbstract": "false" ,
             "isDeprecated": "false" ,
-            "description": "The Training_Set class belongs to the Image_Data_Set class family and contains attributes that describe the provenance, size, and processing details for the machine learning model training set."
+            "description": "The Training_Set class belongs to the Data_Set class family and contains attributes that describe the provenance, size, and processing details for the machine learning model training set."
               , "associationList": [
              {"association": {
-                "identifier": "0001_NASA_PDS_1.ml.Image_Data_Set.ml.data_set_version_id" ,
+                "identifier": "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_version_id" ,
                 "title": "data_set_version_id" ,
                 "assocType": "attribute_of" ,
                 "isAttribute": "true" ,
@@ -363,12 +363,12 @@
                 "maximumCardinality": "1" ,
                 "classOrder": "1010" ,
                 "attributeId": [
-                  "0001_NASA_PDS_1.ml.Image_Data_Set.ml.data_set_version_id"
+                  "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_version_id"
                  ]
               }
             }
            , {"association": {
-                "identifier": "0001_NASA_PDS_1.ml.Image_Data_Set.ml.data_set_size" ,
+                "identifier": "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_size" ,
                 "title": "data_set_size" ,
                 "assocType": "attribute_of" ,
                 "isAttribute": "true" ,
@@ -379,7 +379,7 @@
                 "maximumCardinality": "1" ,
                 "classOrder": "1020" ,
                 "attributeId": [
-                  "0001_NASA_PDS_1.ml.Image_Data_Set.ml.data_set_size"
+                  "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_size"
                  ]
               }
             }
@@ -396,10 +396,10 @@
             "versionId": "1.0.0.0" ,
             "isAbstract": "false" ,
             "isDeprecated": "false" ,
-            "description": "The Validation_Set class belongs to the Image_Data_Set class family and contains attributes that describe the provenance, size, and processing details for the machine learning model validation set. "
+            "description": "The Validation_Set class belongs to the Data_Set class family and contains attributes that describe the provenance, size, and processing details for the machine learning model validation set. "
               , "associationList": [
              {"association": {
-                "identifier": "0001_NASA_PDS_1.ml.Image_Data_Set.ml.data_set_version_id" ,
+                "identifier": "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_version_id" ,
                 "title": "data_set_version_id" ,
                 "assocType": "attribute_of" ,
                 "isAttribute": "true" ,
@@ -410,12 +410,12 @@
                 "maximumCardinality": "1" ,
                 "classOrder": "1010" ,
                 "attributeId": [
-                  "0001_NASA_PDS_1.ml.Image_Data_Set.ml.data_set_version_id"
+                  "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_version_id"
                  ]
               }
             }
            , {"association": {
-                "identifier": "0001_NASA_PDS_1.ml.Image_Data_Set.ml.data_set_size" ,
+                "identifier": "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_size" ,
                 "title": "data_set_size" ,
                 "assocType": "attribute_of" ,
                 "isAttribute": "true" ,
@@ -426,7 +426,7 @@
                 "maximumCardinality": "1" ,
                 "classOrder": "1020" ,
                 "attributeId": [
-                  "0001_NASA_PDS_1.ml.Image_Data_Set.ml.data_set_size"
+                  "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_size"
                  ]
               }
             }
@@ -437,13 +437,13 @@
     , "attributeDictionary": [
         {
           "attribute": {
-            "identifier": "0001_NASA_PDS_1.ml.Image_Data_Set.ml.data_set_size" ,
+            "identifier": "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_size" ,
             "title": "data_set_size" ,
             "registrationAuthorityId": "0001_NASA_PDS_1" ,
             "nameSpaceId": "ml" ,
             "steward": "img" ,
             "versionId": "1.15" ,
-            "description": "The data_set_size attribute provides the number of images within the data set." ,
+            "description": "The data_set_size attribute provides the number of items in the data set." ,
             "isNillable": "false" ,
             "isEnumerated": "false" ,
             "isDeprecated": "false" ,
@@ -462,7 +462,7 @@
         }
       , {
           "attribute": {
-            "identifier": "0001_NASA_PDS_1.ml.Image_Data_Set.ml.data_set_version_id" ,
+            "identifier": "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_version_id" ,
             "title": "data_set_version_id" ,
             "registrationAuthorityId": "0001_NASA_PDS_1" ,
             "nameSpaceId": "ml" ,
@@ -472,10 +472,10 @@
             "isNillable": "false" ,
             "isEnumerated": "false" ,
             "isDeprecated": "false" ,
-            "dataType": "ASCII_Short_String_Collapsed" ,
-            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Short_String_Collapsed" ,
-            "minimumCharacters": "1" ,
-            "maximumCharacters": "255" ,
+            "dataType": "ASCII_VID" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_VID" ,
+            "minimumCharacters": "3" ,
+            "maximumCharacters": "100" ,
             "minimumValue": "Unbounded" ,
             "maximumValue": "Unbounded" ,
             "pattern": "null" ,
@@ -563,7 +563,7 @@
             "nameSpaceId": "ml" ,
             "steward": "img" ,
             "versionId": "1.15" ,
-            "description": "The algorithm_type attribute describes the kind of algorithm used, such as a regression, neural network, tree, or etc." ,
+            "description": "The algorithm_type attribute describes the kind of algorithm used, such as a regression model, neural network, tree, etc." ,
             "isNillable": "false" ,
             "isEnumerated": "true" ,
             "isDeprecated": "false" ,
@@ -581,7 +581,7 @@
           , "PermissibleValueList": [
               {"PermissibleValue": {
                   "value": "Convolutional_Neural_Network_Classifier" ,
-                  "valueMeaning": "The algorithm used for image analysis is a Convolutional Neural Network (CNN) Classifier." ,
+                  "valueMeaning": "The algorithm used for data analysis is a Convolutional Neural Network (CNN) Classifier." ,
                   "isDeprecated": "false"
                 }
              }
@@ -675,10 +675,10 @@
             "isNillable": "false" ,
             "isEnumerated": "false" ,
             "isDeprecated": "false" ,
-            "dataType": "ASCII_Short_String_Collapsed" ,
-            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Short_String_Collapsed" ,
-            "minimumCharacters": "1" ,
-            "maximumCharacters": "255" ,
+            "dataType": "ASCII_VID" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_VID" ,
+            "minimumCharacters": "3" ,
+            "maximumCharacters": "100" ,
             "minimumValue": "Unbounded" ,
             "maximumValue": "Unbounded" ,
             "pattern": "null" ,
