@@ -51,7 +51,7 @@
     <Discipline_Area>
       <ml:Machine_Learning>
         <ml:Trained_Machine_Learning_Model>
-          <ml:trained_model_version_id>2.0.0</ml:trained_model_version_id>
+          <ml:trained_model_version_id>2.0</ml:trained_model_version_id>
           <ml:trained_model_name>TestNet</ml:trained_model_name>
           <ml:trained_model_metric>Test accuracy</ml:trained_model_metric>
           <ml:trained_model_performance>0.93</ml:trained_model_performance>

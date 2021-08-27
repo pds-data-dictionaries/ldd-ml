@@ -51,20 +51,20 @@
     <Discipline_Area>
       <ml:Machine_Learning>
         <ml:Trained_Machine_Learning_Model>
-          <ml:trained_model_version_id>2.0.0</ml:trained_model_version_id>
+          <ml:trained_model_version_id>2.0</ml:trained_model_version_id>
           <ml:trained_model_name>TestNet</ml:trained_model_name>
           <ml:trained_model_metric>Test accuracy</ml:trained_model_metric>
           <ml:trained_model_performance>0.93</ml:trained_model_performance>
           <ml:Training_Set>
-            <ml:data_set_version_id>1.0.0</ml:data_set_version_id>
+            <ml:data_set_version_id>1.0</ml:data_set_version_id>
             <ml:data_set_size>5000</ml:data_set_size>
           </ml:Training_Set>
           <ml:Validation_Set>
-            <ml:data_set_version_id>1.0.0</ml:data_set_version_id>
+            <ml:data_set_version_id>1.0</ml:data_set_version_id>
             <ml:data_set_size>1000</ml:data_set_size>
           </ml:Validation_Set>
           <ml:Test_Set>
-            <ml:data_set_version_id>1.0.0</ml:data_set_version_id>
+            <ml:data_set_version_id>1.0</ml:data_set_version_id>
             <ml:data_set_size>1000</ml:data_set_size>
           </ml:Test_Set>
         </ml:Trained_Machine_Learning_Model>
