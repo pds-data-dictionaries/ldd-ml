@@ -7,7 +7,7 @@ Configuration:
    LDD Discipline (T/F):  true
    LDD Namespace URL:     http://pds.nasa.gov/pds4/
    LDD URN Prefix:        urn:nasa:pds:
-   Time                   Fri Aug 13 18:11:18 UTC 2021
+   Time                   Fri Aug 27 18:54:37 UTC 2021
    Common Schema          [PDS4_PDS_1F00.xsd]
    Common Schematron      [PDS4_PDS_1F00.sch]
    IM Version Id:         1.15.0.0
@@ -45,15 +45,16 @@ Parsed Input - Header:
    Steward                img
    Namespace Id           ml
    Comment                _TBD_Ingest_LDD
-   Last Modification Time 2021-08-02T18:28:00Z
+   Last Modification Time 2021-08-27
    PDS4 Merge Flag        false
 
 Parsed Input - Attributes:
 
    name                   data_set_size
    version                1.15
-   value data type        ASCII_Real
+   value data type        ASCII_Integer
    description            The data_set_size attribute provides the number of images within the data set.
+   minimum value          1
 
    name                   data_set_version_id
    version                1.15
