@@ -10,9 +10,13 @@
   <name>Machine Learning Analysis Dictionary</name>
   <ldd_version_id>1.0.0.0</ldd_version_id>
   <dictionary_type>Discipline</dictionary_type>
-  <full_name>Wagstaff, Kiri L.</full_name>
+  <full_name>Kiri L. Wagstaff</full_name>
   <steward_id>img</steward_id>
   <namespace_id>ml</namespace_id>
+  <comment>
+    version 1.0.0.0
+    - Initial release.
+  </comment>
   <last_modification_date_time>2021-08-27</last_modification_date_time>
 
   <!-- Attributes -->
@@ -338,6 +342,8 @@
       <maximum_occurrences>1</maximum_occurrences>
     </DD_Association>
   </DD_Class>
+
+  <!-- Machine_Learning Class -->
 
   <DD_Class>
     <name>Machine_Learning</name>
