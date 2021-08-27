@@ -13,7 +13,7 @@
   <full_name>Wagstaff, Kiri L.</full_name>
   <steward_id>img</steward_id>
   <namespace_id>ml</namespace_id>
-  <last_modification_date_time>2021-08-02T18:28:00Z</last_modification_date_time>
+  <last_modification_date_time>2021-08-27</last_modification_date_time>
 
   <!-- Attributes -->
   
@@ -29,8 +29,9 @@
     images within the data set.</definition> 
     <DD_Value_Domain>
       <enumeration_flag>false</enumeration_flag>
-      <value_data_type>ASCII_Real</value_data_type>
+      <value_data_type>ASCII_Integer</value_data_type>
       <unit_of_measure_type>Units_of_None</unit_of_measure_type>
+      <minimum_value>1</minimum_value>
     </DD_Value_Domain>
   </DD_Attribute>
   <DD_Attribute>
