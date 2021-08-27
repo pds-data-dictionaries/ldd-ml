@@ -21,7 +21,7 @@
 
   <!-- Attributes -->
   
-  <!-- Attributes for the Image_Data_Set classes.   -->
+  <!-- Attributes for the Data_Set classes.   -->
   
   <DD_Attribute>
     <name>data_set_size</name>
@@ -30,7 +30,7 @@
     <nillable_flag>false</nillable_flag>
     <submitter_name>Minh Le</submitter_name>
     <definition>The data_set_size attribute provides the number of
-    images within the data set.</definition> 
+    items in the data set.</definition> 
     <DD_Value_Domain>
       <enumeration_flag>false</enumeration_flag>
       <value_data_type>ASCII_Integer</value_data_type>
@@ -101,7 +101,7 @@
       <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
       <DD_Permissible_Value>
         <value>Convolutional_Neural_Network_Classifier</value>
-        <value_meaning>The algorithm used for image analysis is a
+        <value_meaning>The algorithm used for data analysis is a
         Convolutional Neural Network (CNN) Classifier.</value_meaning> 
       </DD_Permissible_Value>
     </DD_Value_Domain>
@@ -181,13 +181,13 @@
 
   <!-- Classes -->
   
-  <!-- Image_Data_Set Classes -->
+  <!-- Data_Set Classes -->
   <DD_Class>
-    <name>Image_Data_Set</name>
+    <name>Data_Set</name>
     <version_id>1.0</version_id>
-    <local_identifier>Image_Data_Set</local_identifier>
+    <local_identifier>Data_Set</local_identifier>
     <submitter_name>Minh Le</submitter_name>
-    <definition>The Image_Data_Set class is the container for classes
+    <definition>The Data_Set class is the container for classes
     and attributes describing the provenance, size and processing
     details of data sets used by the machine learning model.</definition>
     <abstract_flag>true</abstract_flag>
@@ -210,13 +210,13 @@
     <version_id>1.0</version_id>
     <local_identifier>Training_Set</local_identifier>
     <submitter_name>Minh Le</submitter_name>
-    <definition>The Training_Set class belongs to the Image_Data_Set
+    <definition>The Training_Set class belongs to the Data_Set
     class family and contains attributes that describe the provenance,
     size, and processing details for the machine learning model
     training set.</definition> 
     <element_flag>false</element_flag>
     <DD_Association>
-      <identifier_reference>Image_Data_Set</identifier_reference>
+      <identifier_reference>Data_Set</identifier_reference>
       <reference_type>parent_of</reference_type>
       <minimum_occurrences>1</minimum_occurrences>
       <maximum_occurrences>1</maximum_occurrences>
@@ -227,13 +227,13 @@
     <version_id>1.0</version_id>
     <local_identifier>Validation_Set</local_identifier>
     <submitter_name>Minh Le</submitter_name>
-    <definition>The Validation_Set class belongs to the Image_Data_Set
+    <definition>The Validation_Set class belongs to the Data_Set
     class family and contains attributes that describe the provenance,
     size, and processing details for the machine learning model
     validation set. </definition> 
     <element_flag>false</element_flag>
     <DD_Association>
-      <identifier_reference>Image_Data_Set</identifier_reference>
+      <identifier_reference>Data_Set</identifier_reference>
       <reference_type>parent_of</reference_type>
       <minimum_occurrences>1</minimum_occurrences>
       <maximum_occurrences>1</maximum_occurrences>
@@ -244,13 +244,13 @@
     <version_id>1.0</version_id>
     <local_identifier>Test_Set</local_identifier>
     <submitter_name>Minh Le</submitter_name>
-    <definition>The Test_Set class belongs to the Image_Data_Set class
+    <definition>The Test_Set class belongs to the Data_Set class
     family and contains attributes describing the provenance, size,
     and processing details for the machine learning model test
     set.</definition>
     <element_flag>false</element_flag>
     <DD_Association>
-      <identifier_reference>Image_Data_Set</identifier_reference>
+      <identifier_reference>Data_Set</identifier_reference>
       <reference_type>parent_of</reference_type>
       <minimum_occurrences>1</minimum_occurrences>
       <maximum_occurrences>1</maximum_occurrences>
