@@ -298,6 +298,12 @@
       <maximum_occurrences>1</maximum_occurrences>
     </DD_Association>
     <DD_Association>
+      <identifier_reference>Machine_Learning_Algorithm</identifier_reference>
+      <reference_type>component_of</reference_type>
+      <minimum_occurrences>1</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
       <identifier_reference>Training_Set</identifier_reference>
       <reference_type>component_of</reference_type>
       <minimum_occurrences>1</minimum_occurrences>
@@ -361,12 +367,6 @@
     <element_flag>true</element_flag>
     <DD_Association>
       <identifier_reference>Trained_Machine_Learning_Model</identifier_reference>
-      <reference_type>component_of</reference_type>
-      <minimum_occurrences>1</minimum_occurrences>
-      <maximum_occurrences>*</maximum_occurrences>
-    </DD_Association>
-    <DD_Association>
-      <identifier_reference>Machine_Learning_Algorithm</identifier_reference>
       <reference_type>component_of</reference_type>
       <minimum_occurrences>1</minimum_occurrences>
       <maximum_occurrences>*</maximum_occurrences>

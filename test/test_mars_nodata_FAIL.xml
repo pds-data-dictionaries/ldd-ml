@@ -55,13 +55,12 @@
           <ml:trained_model_name>TestNet</ml:trained_model_name>
           <ml:trained_model_metric>Test accuracy</ml:trained_model_metric>
           <ml:trained_model_performance>0.93</ml:trained_model_performance>
-        </ml:Trained_Machine_Learning_Model>
-
         <ml:Machine_Learning_Algorithm>
           <ml:algorithm_learning_style>Supervised_Learning</ml:algorithm_learning_style>
           <ml:algorithm_type>Convolutional_Neural_Network_Classifier</ml:algorithm_type>
           <ml:algorithm_name>Fine-tuned AlexNet (ImageNet)</ml:algorithm_name>
         </ml:Machine_Learning_Algorithm>
+        </ml:Trained_Machine_Learning_Model>
       </ml:Machine_Learning>
     </Discipline_Area>
     
