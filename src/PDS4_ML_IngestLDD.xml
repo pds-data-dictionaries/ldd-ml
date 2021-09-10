@@ -26,7 +26,7 @@
 
   <!-- Attributes -->
   
-  <!-- Attributes for the Data_Set classes.   -->
+  <!-- Attributes for the Data_Set classes. -->
   
   <DD_Attribute>
     <name>data_set_size</name>
@@ -58,7 +58,7 @@
     </DD_Value_Domain>
   </DD_Attribute>
   
-  <!-- Attributes for the Machine_Learning_Algorithm class.   -->
+  <!-- Attributes for the Machine_Learning_Algorithm class. -->
   
   <DD_Attribute>
     <name>algorithm_learning_style</name>
@@ -125,7 +125,40 @@
     </DD_Value_Domain>
   </DD_Attribute>
   
-  <!-- Attributes for the Trained_Machine_Learning_Model class.   -->
+  <!-- Attributes for the Test_Performance class. -->
+
+  <DD_Attribute>
+    <name>performance_measure</name>
+    <version_id>1.0</version_id>
+    <local_identifier>performance_measure</local_identifier>
+    <nillable_flag>false</nillable_flag>
+    <submitter_name>Kiri L. Wagstaff</submitter_name>
+    <definition>The performance_measure attribute specifies the name
+    of the measure (or metric) used to report performance of the
+    model on the test set.</definition>
+    <DD_Value_Domain>
+      <enumeration_flag>false</enumeration_flag>
+      <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
+    </DD_Value_Domain>
+  </DD_Attribute>
+
+  <DD_Attribute>
+    <name>performance_score</name>
+    <version_id>1.0</version_id>
+    <local_identifier>performance_score</local_identifier>
+    <nillable_flag>false</nillable_flag>
+    <submitter_name>Kiri L. Wagstaff</submitter_name>
+    <definition>The performance_score attribute reports the numeric
+    score the model achieved using performance_measure on the test
+    set.</definition> 
+    <DD_Value_Domain>
+      <enumeration_flag>false</enumeration_flag>
+      <value_data_type>ASCII_Real</value_data_type>
+      <unit_of_measure_type>Units_of_None</unit_of_measure_type>
+    </DD_Value_Domain>
+  </DD_Attribute>
+  
+  <!-- Attributes for the Trained_Machine_Learning_Model class. -->
 
   <DD_Attribute>
     <name>trained_model_version_id</name>
@@ -154,39 +187,11 @@
       <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
     </DD_Value_Domain>
   </DD_Attribute>
-  <DD_Attribute>
-    <name>trained_model_metric</name>
-    <version_id>1.0</version_id>
-    <local_identifier>trained_model_metric</local_identifier>
-    <nillable_flag>false</nillable_flag>
-    <submitter_name>Kiri L. Wagstaff</submitter_name>
-    <definition>The trained_model_metric attribute describes the
-    metric that was used to evaluate the model's
-    performance.</definition>   
-    <DD_Value_Domain>
-      <enumeration_flag>false</enumeration_flag>
-      <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
-    </DD_Value_Domain>
-  </DD_Attribute>
-  <DD_Attribute>
-    <name>trained_model_performance</name>
-    <version_id>1.0</version_id>
-    <local_identifier>trained_model_performance</local_identifier>
-    <nillable_flag>false</nillable_flag>
-    <submitter_name>Kiri L. Wagstaff</submitter_name>
-    <definition>The trained_model_performance attribute reports the
-    score obtained by the model using
-    trained_model_metric.</definition>    
-    <DD_Value_Domain>
-      <enumeration_flag>false</enumeration_flag>
-      <value_data_type>ASCII_Real</value_data_type>
-      <unit_of_measure_type>Units_of_None</unit_of_measure_type>
-    </DD_Value_Domain>
-  </DD_Attribute>
 
   <!-- Classes -->
   
   <!-- Data_Set Classes -->
+
   <DD_Class>
     <name>Data_Set</name>
     <version_id>1.0</version_id>
@@ -262,7 +267,32 @@
     </DD_Association>
   </DD_Class>
   
+  <!-- Test_Performance Class -->
+
+  <DD_Class>
+    <name>Test_Performance</name>
+    <version_id>1.0</version_id>
+    <local_identifier>Test_Performance</local_identifier>
+    <submitter_name>Kiri L. Wagstaff</submitter_name>
+    <definition>The Test_Performance class contains information about
+    a trained model's performance on the test set.</definition>
+    <element_flag>false</element_flag>
+    <DD_Association>
+      <identifier_reference>performance_measure</identifier_reference>
+      <reference_type>attribute_of</reference_type>
+      <minimum_occurrences>1</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+      <identifier_reference>performance_score</identifier_reference>
+      <reference_type>attribute_of</reference_type>
+      <minimum_occurrences>1</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+  </DD_Class>
+
   <!-- Trained_Machine_Learning_Model Class -->
+
   <DD_Class>
     <name>Trained_Machine_Learning_Model</name>
     <version_id>1.0</version_id>
@@ -281,18 +311,6 @@
     </DD_Association>
     <DD_Association>
       <identifier_reference>trained_model_name</identifier_reference>
-      <reference_type>attribute_of</reference_type>
-      <minimum_occurrences>1</minimum_occurrences>
-      <maximum_occurrences>1</maximum_occurrences>
-    </DD_Association>
-    <DD_Association>
-      <identifier_reference>trained_model_metric</identifier_reference>
-      <reference_type>attribute_of</reference_type>
-      <minimum_occurrences>1</minimum_occurrences>
-      <maximum_occurrences>1</maximum_occurrences>
-    </DD_Association>
-    <DD_Association>
-      <identifier_reference>trained_model_performance</identifier_reference>
       <reference_type>attribute_of</reference_type>
       <minimum_occurrences>1</minimum_occurrences>
       <maximum_occurrences>1</maximum_occurrences>
@@ -320,6 +338,12 @@
       <reference_type>component_of</reference_type>
       <minimum_occurrences>0</minimum_occurrences>
       <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+      <identifier_reference>Test_Performance</identifier_reference>
+      <reference_type>component_of</reference_type>
+      <minimum_occurrences>0</minimum_occurrences>
+      <maximum_occurrences>*</maximum_occurrences>
     </DD_Association>
   </DD_Class>
   
