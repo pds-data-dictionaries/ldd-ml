@@ -53,8 +53,6 @@
         <ml:Trained_Machine_Learning_Model>
           <ml:trained_model_version_id>2.0</ml:trained_model_version_id>
           <ml:trained_model_name>TestNet</ml:trained_model_name>
-          <ml:trained_model_metric>Test accuracy</ml:trained_model_metric>
-          <ml:trained_model_performance>0.93</ml:trained_model_performance>
           <ml:Machine_Learning_Algorithm>
             <ml:algorithm_learning_style>Supervised_Learning</ml:algorithm_learning_style>
             <ml:algorithm_type>Convolutional_Neural_Network_Classifier</ml:algorithm_type>
@@ -72,6 +70,10 @@
             <ml:data_set_version_id>1.0</ml:data_set_version_id>
             <ml:data_set_size>1000</ml:data_set_size>
           </ml:Test_Set>
+          <ml:Test_Performance>
+            <ml:performance_measure>Test accuracy</ml:performance_measure>
+            <ml:performance_score>0.93</ml:performance_score>
+          </ml:Test_Performance>
         </ml:Trained_Machine_Learning_Model>
 
       </ml:Machine_Learning>
