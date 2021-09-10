@@ -7,7 +7,7 @@ Configuration:
    LDD Discipline (T/F):  true
    LDD Namespace URL:     http://pds.nasa.gov/pds4/
    LDD URN Prefix:        urn:nasa:pds:
-   Time                   Fri Aug 27 18:54:37 UTC 2021
+   Time                   Fri Aug 27 19:33:01 UTC 2021
    Common Schema          [PDS4_PDS_1F00.xsd]
    Common Schematron      [PDS4_PDS_1F00.sch]
    IM Version Id:         1.15.0.0
@@ -41,10 +41,13 @@ Detailed validation messages
 Parsed Input - Header:
    LDD Name               Machine Learning Analysis Dictionary
    LDD Version            1.0.0.0
-   Full Name              Wagstaff, Kiri L.
+   Full Name              Kiri L. Wagstaff
    Steward                img
    Namespace Id           ml
-   Comment                _TBD_Ingest_LDD
+   Comment                
+    version 1.0.0.0
+    - Initial release.
+  
    Last Modification Time 2021-08-27
    PDS4 Merge Flag        false
 
@@ -53,12 +56,12 @@ Parsed Input - Attributes:
    name                   data_set_size
    version                1.15
    value data type        ASCII_Integer
-   description            The data_set_size attribute provides the number of images within the data set.
+   description            The data_set_size attribute provides the number of items in the data set.
    minimum value          1
 
    name                   data_set_version_id
    version                1.15
-   value data type        ASCII_Short_String_Collapsed
+   value data type        ASCII_VID
    description            The data_set_version_id attribute specifies the data set version number.
 
    name                   algorithm_learning_style
@@ -69,7 +72,7 @@ Parsed Input - Attributes:
    name                   algorithm_type
    version                1.15
    value data type        ASCII_Short_String_Collapsed
-   description            The algorithm_type attribute describes the kind of algorithm used, such as a regression, neural network, tree, or etc.
+   description            The algorithm_type attribute describes the kind of algorithm used, such as a regression model, neural network, tree, etc.
 
    name                   algorithm_name
    version                1.15
@@ -78,7 +81,7 @@ Parsed Input - Attributes:
 
    name                   trained_model_version_id
    version                1.15
-   value data type        ASCII_Short_String_Collapsed
+   value data type        ASCII_VID
    description            The trained_model_version_id attribute specifies the trained model version number.
 
    name                   trained_model_name
@@ -98,8 +101,8 @@ Parsed Input - Attributes:
 
 Parsed Input - Classes:
 
-   name                   Image_Data_Set
-   description            The Image_Data_Set class is the container for classes and attributes describing the provenance, size and processing details of data sets used by the machine learning model.
+   name                   Data_Set
+   description            The Data_Set class is the container for classes and attributes describing the provenance, size and processing details of data sets used by the machine learning model.
    is abstract            true
    is choice              false
    subclass of            USER
@@ -117,40 +120,40 @@ Parsed Input - Classes:
       reference type        attribute_of
 
    name                   Training_Set
-   description            The Training_Set class belongs to the Image_Data_Set class family and contains attributes that describe the provenance, size, and processing details for the machine learning model training set.
+   description            The Training_Set class belongs to the Data_Set class family and contains attributes that describe the provenance, size, and processing details for the machine learning model training set.
    is abstract            false
    is choice              false
-   subclass of            Image_Data_Set
+   subclass of            Data_Set
 
    Associations
 
-      local identifier      Image_Data_Set
+      local identifier      Data_Set
       minimum occurrences   1
       maximum occurrences   1
       reference type        parent_of
 
    name                   Validation_Set
-   description            The Validation_Set class belongs to the Image_Data_Set class family and contains attributes that describe the provenance, size, and processing details for the machine learning model validation set. 
+   description            The Validation_Set class belongs to the Data_Set class family and contains attributes that describe the provenance, size, and processing details for the machine learning model validation set. 
    is abstract            false
    is choice              false
-   subclass of            Image_Data_Set
+   subclass of            Data_Set
 
    Associations
 
-      local identifier      Image_Data_Set
+      local identifier      Data_Set
       minimum occurrences   1
       maximum occurrences   1
       reference type        parent_of
 
    name                   Test_Set
-   description            The Test_Set class belongs to the Image_Data_Set class family and contains attributes describing the provenance, size, and processing details for the machine learning model test set.
+   description            The Test_Set class belongs to the Data_Set class family and contains attributes describing the provenance, size, and processing details for the machine learning model test set.
    is abstract            false
    is choice              false
-   subclass of            Image_Data_Set
+   subclass of            Data_Set
 
    Associations
 
-      local identifier      Image_Data_Set
+      local identifier      Data_Set
       minimum occurrences   1
       maximum occurrences   1
       reference type        parent_of
