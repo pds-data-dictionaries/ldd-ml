@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!-- PDS4 XML/Schema for Name Space Id:ml  Version:1.0.0.0 - Fri Sep 10 21:46:37 UTC 2021 -->
+  <!-- PDS4 XML/Schema for Name Space Id:ml  Version:1.0.0.0 - Tue Sep 21 19:12:25 UTC 2021 -->
   <!-- Generated from the PDS4 Information Model Version 1.15.0.0 - System Build 11a -->
   <!-- *** This PDS4 product schema is an operational deliverable. *** -->
   <!--                                                                           -->
@@ -68,6 +68,7 @@ This dictionary enables the specification of metadata that
       <xs:element name="algorithm_learning_style" type="ml:algorithm_learning_style" minOccurs="1" maxOccurs="1"> </xs:element>
       <xs:element name="algorithm_type" type="ml:algorithm_type" minOccurs="1" maxOccurs="1"> </xs:element>
       <xs:element name="algorithm_name" type="ml:algorithm_name" minOccurs="1" maxOccurs="1"> </xs:element>
+      <xs:element name="algorithm_citation" type="ml:algorithm_citation" minOccurs="1" maxOccurs="unbounded"> </xs:element>
     </xs:sequence>
     <!-- Begin assert statements for schematron - Enumerated Values -->
     <!-- <xs:assert test="ml:algorithm_learning_style = ('Semisupervised_Learning', 'Supervised_Learning', 'Unsupervised_Learning')"/> -->
@@ -163,6 +164,17 @@ This dictionary enables the specification of metadata that
         common namespace.
       </xs:documentation>
     </xs:annotation>
+
+  <xs:simpleType name="algorithm_citation">
+    <xs:annotation>
+      <xs:documentation>The algorithm_citation attribute provides a
+        citation to the machine learning algorithm.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="pds:ASCII_Short_String_Preserved">
+     <xs:minLength value="1"/>
+     <xs:maxLength value="255"/>
+	   </xs:restriction>
+  </xs:simpleType>
 
   <xs:simpleType name="algorithm_learning_style">
     <xs:annotation>

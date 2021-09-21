@@ -4,7 +4,7 @@
       "Title": "PDS4 Data Dictionary" ,
       "IM Version": "1.15.0.0" ,
       "LDD Version": "1.0.0.0" ,
-      "Date": "Fri Sep 10 21:46:37 UTC 2021" ,
+      "Date": "Tue Sep 21 19:12:25 UTC 2021" ,
       "Description": "This document is a dump of the contents of the PDS4 Data Dictionary" ,
       "namespaces": ["pds:", "ml:"] ,
       "classDictionary": [
@@ -143,6 +143,22 @@
                 "classOrder": "1030" ,
                 "attributeId": [
                   "0001_NASA_PDS_1.ml.Machine_Learning_Algorithm.ml.algorithm_name"
+                 ]
+              }
+            }
+           , {"association": {
+                "identifier": "0001_NASA_PDS_1.ml.Machine_Learning_Algorithm.ml.algorithm_citation" ,
+                "title": "algorithm_citation" ,
+                "assocType": "attribute_of" ,
+                "isAttribute": "true" ,
+                "isChoice": "false" ,
+                "isAny": "false" ,
+                "groupName": "null" ,
+                "minimumCardinality": "1" ,
+                "maximumCardinality": "*" ,
+                "classOrder": "1040" ,
+                "attributeId": [
+                  "0001_NASA_PDS_1.ml.Machine_Learning_Algorithm.ml.algorithm_citation"
                  ]
               }
             }
@@ -507,6 +523,31 @@
             "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_VID" ,
             "minimumCharacters": "3" ,
             "maximumCharacters": "100" ,
+            "minimumValue": "Unbounded" ,
+            "maximumValue": "Unbounded" ,
+            "pattern": "null" ,
+            "unitOfMeasure": "null" ,
+            "unitOfMeasureId": "null" ,
+            "unitId": "null" ,
+            "defaultUnitId": "null"
+          }
+        }
+      , {
+          "attribute": {
+            "identifier": "0001_NASA_PDS_1.ml.Machine_Learning_Algorithm.ml.algorithm_citation" ,
+            "title": "algorithm_citation" ,
+            "registrationAuthorityId": "0001_NASA_PDS_1" ,
+            "nameSpaceId": "ml" ,
+            "steward": "img" ,
+            "versionId": "1.15" ,
+            "description": "The algorithm_citation attribute provides a citation to the machine learning algorithm." ,
+            "isNillable": "false" ,
+            "isEnumerated": "false" ,
+            "isDeprecated": "false" ,
+            "dataType": "ASCII_Short_String_Preserved" ,
+            "dataTypeId": "0001_NASA_PDS_1.pds.ASCII_Short_String_Preserved" ,
+            "minimumCharacters": "1" ,
+            "maximumCharacters": "255" ,
             "minimumValue": "Unbounded" ,
             "maximumValue": "Unbounded" ,
             "pattern": "null" ,

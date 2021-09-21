@@ -3,13 +3,13 @@ PDS Validate Tool Report
 
 Configuration:
    Version                       2.0.7
-   Date                          2021-09-10T21:47:20Z
+   Date                          2021-09-21T19:13:02Z
 
 Parameters:
    Targets                       [file:/home/runner/work/ldd-ml/ldd-ml/test/test_mars_nodata_FAIL.xml]
    Rule Type                     pds4.label
-   User Specified Schemas        [file:/home/runner/work/ldd-ml/ldd-ml/build/development/99b630f3653272b2b39abac114911c44cc8fa29a/1.15.0.0/PDS4_ML_1F00_1000.xsd, file:/tmp/PDS4_PDS_1F00.xsd]
-   User Specified Schematrons    [file:/home/runner/work/ldd-ml/ldd-ml/build/development/99b630f3653272b2b39abac114911c44cc8fa29a/1.15.0.0/PDS4_ML_1F00_1000.sch, file:/tmp/PDS4_PDS_1F00.sch]
+   User Specified Schemas        [file:/home/runner/work/ldd-ml/ldd-ml/build/development/0def72c9454856c582ae0a5e55e7a0a5dd642d22/1.15.0.0/PDS4_ML_1F00_1000.xsd, file:/tmp/PDS4_PDS_1F00.xsd]
+   User Specified Schematrons    [file:/home/runner/work/ldd-ml/ldd-ml/build/development/0def72c9454856c582ae0a5e55e7a0a5dd642d22/1.15.0.0/PDS4_ML_1F00_1000.sch, file:/tmp/PDS4_PDS_1F00.sch]
    Severity Level                WARNING
    Recurse Directories           true
    File Filters Used             [*.xml, *.XML]
@@ -23,7 +23,7 @@ Parameters:
 Product Level Validation Results
 
   FAIL: file:/home/runner/work/ldd-ml/ldd-ml/test/test_mars_nodata_FAIL.xml
-      ERROR  [error.label.schema]   line 61, 32: cvc-complex-type.2.4.a: Invalid content was found starting with element '{"http://pds.nasa.gov/pds4/ml/v1":Test_Performance}'. One of '{"http://pds.nasa.gov/pds4/ml/v1":Training_Set}' is expected.
+      ERROR  [error.label.schema]   line 66, 32: cvc-complex-type.2.4.a: Invalid content was found starting with element '{"http://pds.nasa.gov/pds4/ml/v1":Test_Performance}'. One of '{"http://pds.nasa.gov/pds4/ml/v1":Training_Set}' is expected.
       WARNING  [warning.label.missing_schematron_spec]   No schematron specification found in the label.
         1 product validation(s) completed
 
@@ -47,5 +47,5 @@ Summary:
     1            warning.label.missing_schematron_spec
 
 End of Report
-Completed execution in 5584 ms
+Completed execution in 4433 ms
 

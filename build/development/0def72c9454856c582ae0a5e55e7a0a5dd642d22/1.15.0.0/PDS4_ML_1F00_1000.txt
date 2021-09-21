@@ -7,7 +7,7 @@ Configuration:
    LDD Discipline (T/F):  true
    LDD Namespace URL:     http://pds.nasa.gov/pds4/
    LDD URN Prefix:        urn:nasa:pds:
-   Time                   Fri Sep 10 21:46:37 UTC 2021
+   Time                   Tue Sep 21 19:12:25 UTC 2021
    Common Schema          [PDS4_PDS_1F00.xsd]
    Common Schematron      [PDS4_PDS_1F00.sch]
    IM Version Id:         1.15.0.0
@@ -30,8 +30,8 @@ Parameters:
 
 Summary:
    Classes                8
-   Attributes             9
-   Associations           18
+   Attributes             10
+   Associations           19
    Error messages         0
    Warning messages       0
    Information messages   0
@@ -83,6 +83,11 @@ Parsed Input - Attributes:
    version                1.15
    value data type        ASCII_Short_String_Collapsed
    description            The algorithm_name attribute specifies the name of the algorithm used.
+
+   name                   algorithm_citation
+   version                1.15
+   value data type        ASCII_Short_String_Preserved
+   description            The algorithm_citation attribute provides a citation to the machine learning algorithm.
 
    name                   performance_measure
    version                1.15
@@ -245,6 +250,11 @@ Parsed Input - Classes:
       local identifier      algorithm_name
       minimum occurrences   1
       maximum occurrences   1
+      reference type        attribute_of
+
+      local identifier      algorithm_citation
+      minimum occurrences   1
+      maximum occurrences   *
       reference type        attribute_of
 
    name                   Machine_Learning
