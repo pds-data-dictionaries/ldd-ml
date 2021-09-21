@@ -124,6 +124,19 @@
       <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
     </DD_Value_Domain>
   </DD_Attribute>
+  <DD_Attribute>
+    <name>algorithm_citation</name>
+    <version_id>1.0</version_id>
+    <local_identifier>algorithm_citation</local_identifier>
+    <nillable_flag>false</nillable_flag>
+    <submitter_name>Kiri Wagstaff</submitter_name>
+    <definition>The algorithm_citation attribute provides a citation
+    to the machine learning algorithm.</definition> 
+    <DD_Value_Domain>
+      <enumeration_flag>false</enumeration_flag>
+      <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
+    </DD_Value_Domain>
+  </DD_Attribute>
   
   <!-- Attributes for the Test_Performance class. -->
 
@@ -375,6 +388,12 @@
       <reference_type>attribute_of</reference_type>
       <minimum_occurrences>1</minimum_occurrences>
       <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+      <identifier_reference>algorithm_citation</identifier_reference>
+      <reference_type>attribute_of</reference_type>
+      <minimum_occurrences>1</minimum_occurrences>
+      <maximum_occurrences>*</maximum_occurrences>
     </DD_Association>
   </DD_Class>
 
