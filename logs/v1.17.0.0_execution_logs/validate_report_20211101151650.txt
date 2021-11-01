@@ -3,13 +3,13 @@ PDS Validate Tool Report
 
 Configuration:
    Version                       2.1.0
-   Date                          2021-11-01T06:28:22Z
+   Date                          2021-11-01T15:16:51Z
 
 Parameters:
    Targets                       [file:/home/runner/work/ldd-ml/ldd-ml/test/test_mars_VALID.xml]
    Rule Type                     pds4.label
-   User Specified Schemas        [file:/home/runner/work/ldd-ml/ldd-ml/build/development/037be6acd00c57eedf27385ba2da5d4f1031f457/1.15.0.0/PDS4_ML_1F00_1000.xsd, file:/tmp/PDS4_PDS_1F00.xsd]
-   User Specified Schematrons    [file:/home/runner/work/ldd-ml/ldd-ml/build/development/037be6acd00c57eedf27385ba2da5d4f1031f457/1.15.0.0/PDS4_ML_1F00_1000.sch, file:/tmp/PDS4_PDS_1F00.sch]
+   User Specified Schemas        [file:/home/runner/work/ldd-ml/ldd-ml/build/development/1596ccfb2a3b0217e3e5bb6be838124bfa732126/1.17.0.0/PDS4_ML_1H00_1000.xsd, file:/tmp/PDS4_PDS_1H00.xsd]
+   User Specified Schematrons    [file:/home/runner/work/ldd-ml/ldd-ml/build/development/1596ccfb2a3b0217e3e5bb6be838124bfa732126/1.17.0.0/PDS4_ML_1H00_1000.sch, file:/tmp/PDS4_PDS_1H00.sch]
    Severity Level                WARNING
    Recurse Directories           true
    File Filters Used             [*.xml, *.XML]
@@ -22,18 +22,19 @@ Parameters:
 
 Product Level Validation Results
 
-  PASS: file:/home/runner/work/ldd-ml/ldd-ml/test/test_mars_VALID.xml
+  FAIL: file:/home/runner/work/ldd-ml/ldd-ml/test/test_mars_VALID.xml
+      ERROR  [error.label.schematron]   line 16, 32: The attribute pds:Identification_Area/pds:information_model_version must be equal to the value '1.17.0.0'.
       WARNING  [warning.label.missing_schematron_spec]   No schematron specification found in the label.
         1 product validation(s) completed
 
 Summary:
 
-  0 error(s)
+  1 error(s)
   1 warning(s)
 
   Product Validation Summary:
-    1          product(s) passed
-    0          product(s) failed
+    0          product(s) passed
+    1          product(s) failed
     0          product(s) skipped
 
   Referential Integrity Check Summary:
@@ -42,8 +43,9 @@ Summary:
     0          check(s) skipped
 
   Message Types:
+    1            error.label.schematron
     1            warning.label.missing_schematron_spec
 
 End of Report
-Completed execution in 5476 ms
+Completed execution in 4666 ms
 
