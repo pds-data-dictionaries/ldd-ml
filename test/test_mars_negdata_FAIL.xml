@@ -57,11 +57,16 @@
             <ml:algorithm_learning_style>Supervised_Learning</ml:algorithm_learning_style>
             <ml:algorithm_type>Convolutional_Neural_Network_Classifier</ml:algorithm_type>
             <ml:algorithm_name>Fine-tuned AlexNet (ImageNet)</ml:algorithm_name>
-            <ml:algorithm_citation>Krizhevsky, A., Sutsekver, I., and
-            Hinton, G.E., "Imagenet classification with deep
+            <pds:External_Reference>
+              <pds:doi>10.5555/2999134</pds:doi>
+              <pds:reference_text>
+              Krizhevsky, A., Sutsekver, I., and
+            Hinton, G.E., "Imagenet classification with deep              
             convolutional neural networks," Advances in Neural
             Information Processing Systems 25, p., 1097-1105, 2012.
-            </ml:algorithm_citation>
+              </pds:reference_text>
+              <pds:description>AlexNet citation</pds:description>
+            </pds:External_Reference>
           </ml:Machine_Learning_Algorithm>
           <ml:Training_Set>
             <ml:data_set_version_id>1.0</ml:data_set_version_id>
