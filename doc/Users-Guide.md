@@ -1,5 +1,6 @@
 # PDS4 Machine learning Analysis Local Data Dictionary User's Guide
 November 5, 2021
+
 Kiri Wagstaff
 
 # Overview of the Machine Learning Analysis Local Data Dictionary
@@ -25,8 +26,7 @@ create an issue here:
 
 https://github.com/pds-data-dictionaries/PDS4-LDD-Issue-Repo
 
-# How to Include the Machine Learning Analysis Local Data Dictionary
-  in a PDS4 Label
+# How to Include the Machine Learning Analysis Local Data Dictionary in a PDS4 Label
 
 A data dictionary consists of a `.xsd` schema file and a `.sch`
 Schematron file.  You can obtain the latest dictionary files here:
