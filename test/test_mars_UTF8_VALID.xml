@@ -12,7 +12,7 @@
   <Identification_Area>
     <logical_identifier>urn:nasa:pds:bundle:collection:product</logical_identifier>
     <version_id>1.0</version_id>
-    <title>Invalid Mars ML Product with Missing Data</title>
+    <title>Valid Mars ML Product</title>
     <information_model_version>[IM_VERSION]</information_model_version>
     <product_class>Product_Observational</product_class>
   </Identification_Area>
@@ -60,19 +60,32 @@
             <pds:External_Reference>
               <pds:doi>10.5555/2999134</pds:doi>
               <pds:reference_text>
-              Krizhevsky, A., Sutsekver, I., and
-            Hinton, G.E., "Imagenet classification with deep              
+                Krizhevsky, A., Sutsekver, I., and
+            Hintón, G.E., "Imagenet classification with deep
             convolutional neural networks," Advances in Neural
             Information Processing Systems 25, p., 1097-1105, 2012.
               </pds:reference_text>
               <pds:description>AlexNet citation</pds:description>
             </pds:External_Reference>
           </ml:Machine_Learning_Algorithm>
+          <ml:Training_Set>
+            <ml:data_set_version_id>1.0</ml:data_set_version_id>
+            <ml:data_set_size>5000</ml:data_set_size>
+          </ml:Training_Set>
+          <ml:Validation_Set>
+            <ml:data_set_version_id>1.0</ml:data_set_version_id>
+            <ml:data_set_size>1000</ml:data_set_size>
+          </ml:Validation_Set>
+          <ml:Test_Set>
+            <ml:data_set_version_id>1.0</ml:data_set_version_id>
+            <ml:data_set_size>1000</ml:data_set_size>
+          </ml:Test_Set>
           <ml:Test_Performance>
             <ml:performance_measure>Test accuracy</ml:performance_measure>
             <ml:performance_score>0.93</ml:performance_score>
           </ml:Test_Performance>
         </ml:Trained_Machine_Learning_Model>
+
       </ml:Machine_Learning>
     </Discipline_Area>
     

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!-- PDS4 Schematron for Name Space Id:ml  Version:1.0.0.0 - Fri Aug 13 18:11:18 UTC 2021 -->
-  <!-- Generated from the PDS4 Information Model Version 1.15.0.0 - System Build 11a -->
+  <!-- PDS4 Schematron for Name Space Id:ml  Version:1.0.0.0 - Sat Nov 06 05:07:59 UTC 2021 -->
+  <!-- Generated from the PDS4 Information Model Version 1.17.0.0 - System Build 12.0 -->
   <!-- *** This PDS4 schematron file is an operational deliverable. *** -->
 <sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
 
@@ -22,14 +22,14 @@
     <sch:rule context="ml:Machine_Learning_Algorithm/ml:algorithm_learning_style">
       <sch:assert test=". = ('Semisupervised_Learning', 'Supervised_Learning', 'Unsupervised_Learning')">
         <title>ml:Machine_Learning_Algorithm/ml:algorithm_learning_style/ml:algorithm_learning_style</title>
-        The attribute ml:algorithm_learning_style must be equal to one of the following values 'Semisupervised_Learning', 'Supervised_Learning', 'Unsupervised_Learning'.</sch:assert>
+        The attribute ml:Machine_Learning_Algorithm/ml:algorithm_learning_style must be equal to one of the following values 'Semisupervised_Learning', 'Supervised_Learning', 'Unsupervised_Learning'.</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:rule context="ml:Machine_Learning_Algorithm/ml:algorithm_type">
       <sch:assert test=". = ('Convolutional_Neural_Network_Classifier')">
         <title>ml:Machine_Learning_Algorithm/ml:algorithm_type/ml:algorithm_type</title>
-        The attribute ml:algorithm_type must be equal to the value 'Convolutional_Neural_Network_Classifier'.</sch:assert>
+        The attribute ml:Machine_Learning_Algorithm/ml:algorithm_type must be equal to the value 'Convolutional_Neural_Network_Classifier'.</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

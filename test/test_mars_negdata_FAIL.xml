@@ -68,6 +68,10 @@
               <pds:description>AlexNet citation</pds:description>
             </pds:External_Reference>
           </ml:Machine_Learning_Algorithm>
+          <ml:Training_Set>
+            <ml:data_set_version_id>1.0</ml:data_set_version_id>
+            <ml:data_set_size>-10</ml:data_set_size>
+          </ml:Training_Set>
           <ml:Test_Performance>
             <ml:performance_measure>Test accuracy</ml:performance_measure>
             <ml:performance_score>0.93</ml:performance_score>
