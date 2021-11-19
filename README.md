@@ -16,7 +16,7 @@ LDD Steward: [IMG Node](https://pds-imaging.jpl.nasa.gov/), Kiri Wagstaff
 
 # Documentation
 
-* **User Guide:** See included file Users-Guide.md
+* **User Guide:** See included file `doc/Users-Guide.md`
 * **Other PDS Data Dictionaries Documentation:** https://pds-data-dictionaries.github.io/
 
 ## Propose Updates
