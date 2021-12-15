@@ -1,4 +1,4 @@
-# PDS4 Machine learning Analysis Local Data Dictionary User's Guide
+# PDS4 Machine Learning Analysis Local Data Dictionary User's Guide
 November 5, 2021
 
 Kiri Wagstaff
