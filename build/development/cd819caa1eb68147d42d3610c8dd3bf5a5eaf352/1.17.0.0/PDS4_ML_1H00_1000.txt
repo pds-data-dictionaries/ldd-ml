@@ -3,16 +3,16 @@ PDS4 Local Data Dictionary Processing Report
 Configuration:
    LDDTool Version        13.1.0
    LDD Version Id:        1.0.0.0
-   LDD Label Version Id:  1.21
+   LDD Label Version Id:  1.23
    LDD Discipline (T/F):  true
    LDD Namespace URL:     http://pds.nasa.gov/pds4/
    LDD URN Prefix:        urn:nasa:pds:
-   Time                   Fri Nov 19 17:51:36 UTC 2021
-   Common Schema          [PDS4_PDS_1F00.xsd]
-   Common Schematron      [PDS4_PDS_1F00.sch]
-   IM Version Id:         1.15.0.0
+   Time                   Wed Dec 15 16:50:35 UTC 2021
+   Common Schema          [PDS4_PDS_1H00.xsd]
+   Common Schematron      [PDS4_PDS_1H00.sch]
+   IM Version Id:         1.17.0.0
    IM Namespace Id:       pds
-   IM Label Version Id:   1.21
+   IM Label Version Id:   1.23
    IM Object Model        [UpperModel.pont]
    IM Data Dictionary     [dd11179.pins]
    IM Configuration File  [MDPTNConfigClassDisp.xml]
@@ -59,48 +59,48 @@ Parsed Input - Header:
 Parsed Input - Attributes:
 
    name                   data_set_size
-   version                1.15
+   version                1.17
    value data type        ASCII_Integer
    description            The data_set_size attribute provides the number of items in the data set.
    minimum value          1
 
    name                   data_set_version_id
-   version                1.15
+   version                1.17
    value data type        ASCII_VID
    description            The data_set_version_id attribute specifies the data set version number.
 
    name                   algorithm_learning_style
-   version                1.15
+   version                1.17
    value data type        ASCII_Short_String_Collapsed
    description            The algorithm_learning_style attribute describes the type of learning style adopted by the algorithm to model a problem.
 
    name                   algorithm_type
-   version                1.15
+   version                1.17
    value data type        ASCII_Short_String_Collapsed
    description            The algorithm_type attribute describes the kind of algorithm used, such as a regression model, neural network, tree, etc.
 
    name                   algorithm_name
-   version                1.15
+   version                1.17
    value data type        ASCII_String
    description            The algorithm_name attribute specifies the name of the algorithm used.
 
    name                   performance_measure
-   version                1.15
+   version                1.17
    value data type        ASCII_Short_String_Collapsed
    description            The performance_measure attribute specifies the name of the measure (or metric) used to report performance of the model on the test set.
 
    name                   performance_score
-   version                1.15
+   version                1.17
    value data type        ASCII_Real
    description            The performance_score attribute reports the numeric score the model achieved using performance_measure on the test set.
 
    name                   trained_model_version_id
-   version                1.15
+   version                1.17
    value data type        ASCII_VID
    description            The trained_model_version_id attribute specifies the trained model version number.
 
    name                   trained_model_name
-   version                1.15
+   version                1.17
    value data type        ASCII_Short_String_Collapsed
    description            The trained_model_name attribute specifies the name of the model used.
 
