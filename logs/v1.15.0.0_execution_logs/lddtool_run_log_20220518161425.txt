@@ -1,21 +1,20 @@
 
->>  INFO LDDTOOL Version: 13.1.0
+>>  INFO LDDTOOL Version: 14.0.1
 >>  INFO IM Version Id: 1.15.0.0
 >>  INFO IM Namespace Id: pds
 >>  INFO IM Label Version Id: 1.21
->>  INFO Date: Sat Nov 06 05:08:00 UTC 2021
->>  INFO PARENT_DIR: /tmp/lddtool-13.1.0
->>  INFO SCRIPT_DIR: /tmp/lddtool-13.1.0/bin
->>  INFO LIB_DIR: /tmp/lddtool-13.1.0/lib
+>>  INFO Date: Wed May 18 16:14:25 UTC 2022
+>>  INFO PARENT_DIR: /tmp/lddtool-14.0.1
+>>  INFO SCRIPT_DIR: /tmp/lddtool-14.0.1/bin
+>>  INFO LIB_DIR: /tmp/lddtool-14.0.1/lib
 
 >>> INFO Init:  - Config.Properties Namespace Id Using:pds
 >>> INFO Init:  - LDD Dictionary_Type is Discipline
 >>> INFO Attribute: <data_set_size> - The default minimum value provided by the attribute's data type is being overridden with 1
 >>> WARNING Init:  - Config.Properties Namespace Id Not Found:ml
->>> WARNING Header:  - New namespace id has been specified:ml
 
  -- LDDTool Execution Summary --
-     2 warning(s)
+     1 warning(s)
      0 error(s)
      0 fatal error(s)
 
