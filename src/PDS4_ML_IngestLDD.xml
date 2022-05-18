@@ -121,7 +121,7 @@
     algorithm used.</definition> 
     <DD_Value_Domain>
       <enumeration_flag>false</enumeration_flag>
-      <value_data_type>ASCII_String</value_data_type>
+      <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
     </DD_Value_Domain>
   </DD_Attribute>
   
@@ -356,7 +356,8 @@
     <submitter_name>Minh Le</submitter_name>
     <definition>The Machine_Learning_Algorithm class is a container
     for classes and and attributes describing the algorithm type and
-    learning style used.</definition> 
+    learning style used.  An external reference to a citation for the
+    algorithm is required.</definition> 
     <element_flag>false</element_flag>
     <DD_Association>
       <identifier_reference>algorithm_learning_style</identifier_reference>
@@ -377,7 +378,7 @@
       <maximum_occurrences>1</maximum_occurrences>
     </DD_Association>
     <DD_Association>
-      <description>Reference for the algorithm citation</description>
+      <!-- Reference for the algorithm citation -->
       <identifier_reference>pds.External_Reference</identifier_reference>
       <reference_type>component_of</reference_type>
       <minimum_occurrences>1</minimum_occurrences>
