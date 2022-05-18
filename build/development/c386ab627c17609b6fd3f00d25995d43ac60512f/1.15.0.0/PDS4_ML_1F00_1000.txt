@@ -1,13 +1,13 @@
 PDS4 Local Data Dictionary Processing Report
 
 Configuration:
-   LDDTool Version        13.1.0
+   LDDTool Version        14.0.1
    LDD Version Id:        1.0.0.0
    LDD Label Version Id:  1.21
    LDD Discipline (T/F):  true
    LDD Namespace URL:     http://pds.nasa.gov/pds4/
    LDD URN Prefix:        urn:nasa:pds:
-   Time                   Sat Nov 06 05:08:00 UTC 2021
+   Time                   Wed May 18 16:14:25 UTC 2022
    Common Schema          [PDS4_PDS_1F00.xsd]
    Common Schematron      [PDS4_PDS_1F00.sch]
    IM Version Id:         1.15.0.0
@@ -81,7 +81,7 @@ Parsed Input - Attributes:
 
    name                   algorithm_name
    version                1.15
-   value data type        ASCII_String
+   value data type        ASCII_Short_String_Collapsed
    description            The algorithm_name attribute specifies the name of the algorithm used.
 
    name                   performance_measure
@@ -225,7 +225,7 @@ Parsed Input - Classes:
       reference type        component_of
 
    name                   Machine_Learning_Algorithm
-   description            The Machine_Learning_Algorithm class is a container for classes and and attributes describing the algorithm type and learning style used.
+   description            The Machine_Learning_Algorithm class is a container for classes and and attributes describing the algorithm type and learning style used. An external reference to a citation for the algorithm is required.
    is abstract            false
    is choice              false
    subclass of            USER
