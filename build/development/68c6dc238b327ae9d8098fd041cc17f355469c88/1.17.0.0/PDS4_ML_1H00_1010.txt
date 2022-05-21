@@ -2,12 +2,20 @@ PDS4 Local Data Dictionary Processing Report
 
 Configuration:
    LDDTool Version        10.0.0
+<<<<<<< HEAD:build/development/68c6dc238b327ae9d8098fd041cc17f355469c88/1.17.0.0/PDS4_ML_1H00_1010.txt
    LDD Version Id:        1.0.1.0
+=======
+   LDD Version Id:        1.0.0.0
+>>>>>>> dbe959b370980c4ef9f22a803dadffacc4684750:build/development/7e801da6850b1eea9075f4d0624a723857a0c694/1.17.0.0/PDS4_ML_1H00_1000.txt
    LDD Label Version Id:  1.23
    LDD Discipline (T/F):  true
    LDD Namespace URL:     http://pds.nasa.gov/pds4/
    LDD URN Prefix:        urn:nasa:pds:
+<<<<<<< HEAD:build/development/68c6dc238b327ae9d8098fd041cc17f355469c88/1.17.0.0/PDS4_ML_1H00_1010.txt
    Time                   Sat May 21 00:21:06 UTC 2022
+=======
+   Time                   Sat May 21 00:18:37 UTC 2022
+>>>>>>> dbe959b370980c4ef9f22a803dadffacc4684750:build/development/7e801da6850b1eea9075f4d0624a723857a0c694/1.17.0.0/PDS4_ML_1H00_1000.txt
    Common Schema          [PDS4_PDS_1H00.xsd]
    Common Schematron      [PDS4_PDS_1H00.sch]
    IM Version Id:         1.17.0.0

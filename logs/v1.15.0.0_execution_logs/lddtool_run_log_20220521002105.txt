@@ -3,7 +3,11 @@
 >>  INFO IM Version Id: 1.15.0.0
 >>  INFO IM Namespace Id: pds
 >>  INFO IM Label Version Id: 1.21
+<<<<<<< HEAD:logs/v1.15.0.0_execution_logs/lddtool_run_log_20220521002105.txt
 >>  INFO Date: Sat May 21 00:21:07 UTC 2022
+=======
+>>  INFO Date: Sat May 21 00:18:42 UTC 2022
+>>>>>>> dbe959b370980c4ef9f22a803dadffacc4684750:logs/v1.15.0.0_execution_logs/lddtool_run_log_20220521001842.txt
 >>  INFO PARENT_DIR: /tmp/lddtool-14.0.1
 >>  INFO SCRIPT_DIR: /tmp/lddtool-14.0.1/bin
 >>  INFO LIB_DIR: /tmp/lddtool-14.0.1/lib

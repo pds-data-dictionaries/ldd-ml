@@ -3,6 +3,7 @@ PDS Validate Tool Report
 
 Configuration:
    Version                       2.2.0
+<<<<<<< HEAD:logs/v1.15.0.0_execution_logs/validate_report_20220521002117.txt
    Date                          2022-05-21T00:21:19Z
 
 Parameters:
@@ -10,6 +11,15 @@ Parameters:
    Rule Type                     pds4.label
    User Specified Schemas        [file:/home/runner/work/ldd-ml/ldd-ml/build/development/68c6dc238b327ae9d8098fd041cc17f355469c88/1.15.0.0/PDS4_ML_1F00_1010.xsd, file:/tmp/PDS4_PDS_1F00.xsd]
    User Specified Schematrons    [file:/home/runner/work/ldd-ml/ldd-ml/build/development/68c6dc238b327ae9d8098fd041cc17f355469c88/1.15.0.0/PDS4_ML_1F00_1010.sch, file:/tmp/PDS4_PDS_1F00.sch]
+=======
+   Date                          2022-05-21T00:18:50Z
+
+Parameters:
+   Targets                       [file:/home/runner/work/ldd-ml/ldd-ml/build/development/7e801da6850b1eea9075f4d0624a723857a0c694/1.17.0.0/PDS4_ML_1H00_1000.xml]
+   Rule Type                     pds4.label
+   User Specified Schemas        [file:/home/runner/work/ldd-ml/ldd-ml/build/development/7e801da6850b1eea9075f4d0624a723857a0c694/1.17.0.0/PDS4_ML_1H00_1000.xsd, file:/tmp/PDS4_PDS_1H00.xsd]
+   User Specified Schematrons    [file:/home/runner/work/ldd-ml/ldd-ml/build/development/7e801da6850b1eea9075f4d0624a723857a0c694/1.17.0.0/PDS4_ML_1H00_1000.sch, file:/tmp/PDS4_PDS_1H00.sch]
+>>>>>>> dbe959b370980c4ef9f22a803dadffacc4684750:logs/v1.17.0.0_execution_logs/validate_report_20220521001848.txt
    Severity Level                WARNING
    Recurse Directories           true
    File Filters Used             [*.xml, *.XML]
@@ -22,7 +32,11 @@ Parameters:
 
 Product Level Validation Results
 
+<<<<<<< HEAD:logs/v1.15.0.0_execution_logs/validate_report_20220521002117.txt
   PASS: file:/home/runner/work/ldd-ml/ldd-ml/build/development/68c6dc238b327ae9d8098fd041cc17f355469c88/1.15.0.0/PDS4_ML_1F00_1010.xml
+=======
+  PASS: file:/home/runner/work/ldd-ml/ldd-ml/build/development/7e801da6850b1eea9075f4d0624a723857a0c694/1.17.0.0/PDS4_ML_1H00_1000.xml
+>>>>>>> dbe959b370980c4ef9f22a803dadffacc4684750:logs/v1.17.0.0_execution_logs/validate_report_20220521001848.txt
         1 product validation(s) completed
 
 Summary:
@@ -42,5 +56,9 @@ Summary:
 
 
 End of Report
+<<<<<<< HEAD:logs/v1.15.0.0_execution_logs/validate_report_20220521002117.txt
 Completed execution in 6095 ms
+=======
+Completed execution in 4621 ms
+>>>>>>> dbe959b370980c4ef9f22a803dadffacc4684750:logs/v1.17.0.0_execution_logs/validate_report_20220521001848.txt
 
