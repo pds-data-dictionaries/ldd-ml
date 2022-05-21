@@ -2,21 +2,35 @@
 PDS Validate Tool Report
 
 Configuration:
+<<<<<<< HEAD:logs/v1.15.0.0_execution_logs/validate_report_20220521003137.txt
    Version                       2.2.0
    Date                          2022-05-21T00:31:39Z
+=======
+   Version                       2.1.2
+   Date                          2021-12-15T16:52:09Z
+>>>>>>> update-tests:logs/v1.17.0.0_execution_logs/validate_report_20211215165207.txt
 
 Parameters:
    Targets                       [file:/home/runner/work/ldd-ml/ldd-ml/test/test_mars_nodata_FAIL.xml]
    Rule Type                     pds4.label
+<<<<<<< HEAD:logs/v1.15.0.0_execution_logs/validate_report_20220521003137.txt
    User Specified Schemas        [file:/home/runner/work/ldd-ml/ldd-ml/build/development/b52d1a8329ffa794d8eeb7b0dbf1a3cecf7317aa/1.15.0.0/PDS4_ML_1F00_1010.xsd, file:/tmp/PDS4_PDS_1F00.xsd]
    User Specified Schematrons    [file:/home/runner/work/ldd-ml/ldd-ml/build/development/b52d1a8329ffa794d8eeb7b0dbf1a3cecf7317aa/1.15.0.0/PDS4_ML_1F00_1010.sch, file:/tmp/PDS4_PDS_1F00.sch]
+=======
+   User Specified Schemas        [file:/home/runner/work/ldd-ml/ldd-ml/build/development/cd819caa1eb68147d42d3610c8dd3bf5a5eaf352/1.17.0.0/PDS4_ML_1H00_1000.xsd, file:/tmp/PDS4_PDS_1H00.xsd]
+   User Specified Schematrons    [file:/home/runner/work/ldd-ml/ldd-ml/build/development/cd819caa1eb68147d42d3610c8dd3bf5a5eaf352/1.17.0.0/PDS4_ML_1H00_1000.sch, file:/tmp/PDS4_PDS_1H00.sch]
+>>>>>>> update-tests:logs/v1.17.0.0_execution_logs/validate_report_20211215165207.txt
    Severity Level                WARNING
    Recurse Directories           true
    File Filters Used             [*.xml, *.XML]
    Data Content Validation       off
    Product Level Validation      on
    Max Errors                    100000
+<<<<<<< HEAD:logs/v1.15.0.0_execution_logs/validate_report_20220521003137.txt
    Registered Contexts File      /tmp/validate-2.2.0/resources/registered_context_products.json
+=======
+   Registered Contexts File      /tmp/validate-2.1.2/resources/registered_context_products.json
+>>>>>>> update-tests:logs/v1.17.0.0_execution_logs/validate_report_20211215165207.txt
 
 
 
@@ -47,5 +61,9 @@ Summary:
     1            warning.label.missing_schematron_spec
 
 End of Report
+<<<<<<< HEAD:logs/v1.15.0.0_execution_logs/validate_report_20220521003137.txt
 Completed execution in 4495 ms
+=======
+Completed execution in 7142 ms
+>>>>>>> update-tests:logs/v1.17.0.0_execution_logs/validate_report_20211215165207.txt
 

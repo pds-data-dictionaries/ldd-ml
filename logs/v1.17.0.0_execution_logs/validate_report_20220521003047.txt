@@ -2,6 +2,7 @@
 PDS Validate Tool Report
 
 Configuration:
+<<<<<<< HEAD:logs/v1.17.0.0_execution_logs/validate_report_20220521003047.txt
    Version                       2.2.0
    Date                          2022-05-21T00:30:49Z
 
@@ -10,19 +11,37 @@ Parameters:
    Rule Type                     pds4.label
    User Specified Schemas        [file:/home/runner/work/ldd-ml/ldd-ml/build/development/b52d1a8329ffa794d8eeb7b0dbf1a3cecf7317aa/1.17.0.0/PDS4_ML_1H00_1010.xsd, file:/tmp/PDS4_PDS_1H00.xsd]
    User Specified Schematrons    [file:/home/runner/work/ldd-ml/ldd-ml/build/development/b52d1a8329ffa794d8eeb7b0dbf1a3cecf7317aa/1.17.0.0/PDS4_ML_1H00_1010.sch, file:/tmp/PDS4_PDS_1H00.sch]
+=======
+   Version                       2.1.2
+   Date                          2021-12-15T16:50:53Z
+
+Parameters:
+   Targets                       [file:/home/runner/work/ldd-ml/ldd-ml/build/development/cd819caa1eb68147d42d3610c8dd3bf5a5eaf352/1.17.0.0/PDS4_ML_1H00_1000.xml]
+   Rule Type                     pds4.label
+   User Specified Schemas        [file:/home/runner/work/ldd-ml/ldd-ml/build/development/cd819caa1eb68147d42d3610c8dd3bf5a5eaf352/1.17.0.0/PDS4_ML_1H00_1000.xsd, file:/tmp/PDS4_PDS_1H00.xsd]
+   User Specified Schematrons    [file:/home/runner/work/ldd-ml/ldd-ml/build/development/cd819caa1eb68147d42d3610c8dd3bf5a5eaf352/1.17.0.0/PDS4_ML_1H00_1000.sch, file:/tmp/PDS4_PDS_1H00.sch]
+>>>>>>> update-tests:logs/v1.17.0.0_execution_logs/validate_report_20211215165051.txt
    Severity Level                WARNING
    Recurse Directories           true
    File Filters Used             [*.xml, *.XML]
    Data Content Validation       off
    Product Level Validation      on
    Max Errors                    100000
+<<<<<<< HEAD:logs/v1.17.0.0_execution_logs/validate_report_20220521003047.txt
    Registered Contexts File      /tmp/validate-2.2.0/resources/registered_context_products.json
+=======
+   Registered Contexts File      /tmp/validate-2.1.2/resources/registered_context_products.json
+>>>>>>> update-tests:logs/v1.17.0.0_execution_logs/validate_report_20211215165051.txt
 
 
 
 Product Level Validation Results
 
+<<<<<<< HEAD:logs/v1.17.0.0_execution_logs/validate_report_20220521003047.txt
   PASS: file:/home/runner/work/ldd-ml/ldd-ml/build/development/b52d1a8329ffa794d8eeb7b0dbf1a3cecf7317aa/1.17.0.0/PDS4_ML_1H00_1010.xml
+=======
+  PASS: file:/home/runner/work/ldd-ml/ldd-ml/build/development/cd819caa1eb68147d42d3610c8dd3bf5a5eaf352/1.17.0.0/PDS4_ML_1H00_1000.xml
+>>>>>>> update-tests:logs/v1.17.0.0_execution_logs/validate_report_20211215165051.txt
         1 product validation(s) completed
 
 Summary:
@@ -42,5 +61,9 @@ Summary:
 
 
 End of Report
+<<<<<<< HEAD:logs/v1.17.0.0_execution_logs/validate_report_20220521003047.txt
 Completed execution in 5106 ms
+=======
+Completed execution in 7451 ms
+>>>>>>> update-tests:logs/v1.17.0.0_execution_logs/validate_report_20211215165051.txt
 

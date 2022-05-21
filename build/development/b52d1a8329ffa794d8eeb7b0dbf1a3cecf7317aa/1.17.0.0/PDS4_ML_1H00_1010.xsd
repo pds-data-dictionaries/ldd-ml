@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD:build/development/b52d1a8329ffa794d8eeb7b0dbf1a3cecf7317aa/1.17.0.0/PDS4_ML_1H00_1010.xsd
   <!-- PDS4 XML/Schema for Name Space Id:ml  Version:1.0.1.0 - Sat May 21 00:30:37 UTC 2022 -->
+=======
+  <!-- PDS4 XML/Schema for Name Space Id:ml  Version:1.0.0.0 - Wed Dec 15 16:50:35 UTC 2021 -->
+>>>>>>> update-tests:build/development/cd819caa1eb68147d42d3610c8dd3bf5a5eaf352/1.17.0.0/PDS4_ML_1H00_1000.xsd
   <!-- Generated from the PDS4 Information Model Version 1.17.0.0 - System Build 12.0 -->
   <!-- *** This PDS4 product schema is an operational deliverable. *** -->
   <!--                                                                           -->

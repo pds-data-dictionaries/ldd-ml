@@ -3,10 +3,17 @@
 >>  INFO IM Version Id: 1.17.0.0
 >>  INFO IM Namespace Id: pds
 >>  INFO IM Label Version Id: 1.23
+<<<<<<< HEAD:logs/v1.17.0.0_execution_logs/lddtool_run_log_20220521003037.txt
 >>  INFO Date: Sat May 21 00:30:37 UTC 2022
 >>  INFO PARENT_DIR: /tmp/lddtool-14.0.1
 >>  INFO SCRIPT_DIR: /tmp/lddtool-14.0.1/bin
 >>  INFO LIB_DIR: /tmp/lddtool-14.0.1/lib
+=======
+>>  INFO Date: Wed Dec 15 16:50:35 UTC 2021
+>>  INFO PARENT_DIR: /tmp/lddtool-13.1.0
+>>  INFO SCRIPT_DIR: /tmp/lddtool-13.1.0/bin
+>>  INFO LIB_DIR: /tmp/lddtool-13.1.0/lib
+>>>>>>> update-tests:logs/v1.17.0.0_execution_logs/lddtool_run_log_20211215165034.txt
 
 >>> INFO Init:  - Config.Properties Namespace Id Found:ml
 >>> INFO Init:  - Config.Properties Namespace Id Using:ml
