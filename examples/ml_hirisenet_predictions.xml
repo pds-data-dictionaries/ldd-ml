@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1I00.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/ml/v1/PDS4_ML_1I00_1010.sch"
+  schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Observational xmlns="http://pds.nasa.gov/pds4/pds/v1"
+                       xmlns:ml="http://pds.nasa.gov/pds4/ml/v1"
+                       xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
+                       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                       xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1
+                                           https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1I00.xsd
+                                           http://pds.nasa.gov/pds4/ml/v1
+                                           https://pds.nasa.gov/pds4/ml/v1/PDS4_ML_1I00_1010.xsd">
+
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:hirisenet:data:hirisenet_predicted_landmarks</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>HiRISE Predicted Landmark Classes</title>
+    <information_model_version>1.18.0.0</information_model_version>
+    <product_class>Product_Observational</product_class>
+    <Citation_Information>
+      <author_list>Kiri Wagstaff, Steven Lu, Emily Dunkel, Gary Doran,
+      Kevin Grimes, and Lukas Mandrake.</author_list>
+      <publication_year>2022</publication_year>
+      <description>Class predictions for individual landmarks
+      generated from analysis of HiRISE images of the Mars surface,
+      version 3. The six columns in this file contain the image
+      identifier, predicted class, posterior probability,
+      bounding box corner coordinates (pixel y/x, 8 values),
+      and bounding box corner coordinates (lon/lat, 8 values).
+      This is a truncated version of the product for illustrative
+      purposes.</description> 
+    </Citation_Information>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2022-01-19</modification_date>
+        <version_id>1.0</version_id>
+        <description>Initial version.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+
+  <Observation_Area>
+    <comment>The HiRISE landmark predictions were generated from
+    analysis of HiRISE orbital observations of Mars.</comment>
+
+    <Time_Coordinates>
+      <start_date_time xsi:nil="true" nilReason="inapplicable"/>
+      <stop_date_time xsi:nil="true" nilReason="inapplicable"/>
+    </Time_Coordinates>
+
+    <Investigation_Area>
+      <name>Mars Reconnaissance Orbiter</name>
+      <type>Mission</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:investigation:mission.mars_reconnaissance_orbiter</lid_reference>
+        <reference_type>data_to_investigation</reference_type>
+      </Internal_Reference>
+    </Investigation_Area>
+
+    <Observing_System>
+      <Observing_System_Component>
+        <name>HiRISE</name>
+        <type>Instrument</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument:hirise.mro</lid_reference>
+          <reference_type>is_instrument</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>Mars Reconnaissance Orbiter</name>
+        <type>Host</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.mro</lid_reference>
+          <reference_type>is_instrument_host</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+    </Observing_System>
+    
+    <Target_Identification>
+      <name>Mars</name>
+      <type>Planet</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference>
+        <reference_type>data_to_target</reference_type>
+      </Internal_Reference>
+    </Target_Identification>
+
+    <Discipline_Area>
+      <ml:Machine_Learning>
+        <ml:Trained_Machine_Learning_Model>
+          <ml:trained_model_version_id>3.0</ml:trained_model_version_id>
+          <ml:trained_model_name>HiRISENet</ml:trained_model_name>
+          <ml:Machine_Learning_Algorithm>
+            <ml:algorithm_learning_style>Supervised_Learning</ml:algorithm_learning_style>
+            <ml:algorithm_type>Convolutional_Neural_Network_Classifier</ml:algorithm_type>
+            <ml:algorithm_name>Fine-tuned AlexNet (ImageNet) with
+            Temperature Scaling Calibration</ml:algorithm_name>
+            <pds:External_Reference>
+              <pds:doi>10.5555/2999134</pds:doi>
+              <pds:reference_text>Krizhevsky, A., Sutsekver, I., and
+            Hinton, G.E., "Imagenet classification with deep
+            convolutional neural networks," Advances in Neural
+            Information Processing Systems 25, p., 1097-1105, 2012.
+              </pds:reference_text>
+              <pds:description>AlexNet citation</pds:description>
+            </pds:External_Reference>
+          </ml:Machine_Learning_Algorithm>
+          <ml:Training_Set>
+            <ml:data_set_version_id>3.2</ml:data_set_version_id>
+            <ml:data_set_size>48979</ml:data_set_size>
+          </ml:Training_Set>
+          <ml:Validation_Set>
+            <ml:data_set_version_id>3.2</ml:data_set_version_id>
+            <ml:data_set_size>14959</ml:data_set_size>
+          </ml:Validation_Set>
+          <ml:Test_Set>
+            <ml:data_set_version_id>3.2</ml:data_set_version_id>
+            <ml:data_set_size>1793</ml:data_set_size>
+          </ml:Test_Set>
+          <ml:Test_Performance>
+            <ml:performance_measure>Test accuracy</ml:performance_measure>
+            <ml:performance_score>0.745</ml:performance_score>
+          </ml:Test_Performance>
+          <ml:Test_Performance>
+            <ml:performance_measure>Test accuracy with abstention below
+            0.9 confidence</ml:performance_measure>
+            <ml:performance_score>0.967</ml:performance_score>
+          </ml:Test_Performance>
+          <ml:Test_Performance>
+            <ml:performance_measure>Test abstention rate with 0.9
+            confidence threshold</ml:performance_measure>
+            <ml:performance_score>0.20</ml:performance_score>
+          </ml:Test_Performance>
+        </ml:Trained_Machine_Learning_Model>
+      </ml:Machine_Learning>
+    </Discipline_Area>
+    
+  </Observation_Area>
+  <File_Area_Observational>
+    <File>
+      <file_name>landmarks-caffe-PDS4-first20.csv</file_name>
+      <creation_date_time>2020-09-11</creation_date_time>
+      <file_size unit="byte">4358</file_size>
+      <records>20</records>
+    </File>
+    <Table_Delimited>
+      <name>HiRISE Orbital Data Class Predictions</name>
+      <local_identifier>TABLE</local_identifier>
+      <offset unit="byte">0</offset>
+      <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+      <records>20</records>
+      <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+      <field_delimiter>Comma</field_delimiter>
+      <Record_Delimited>
+        <fields>19</fields>
+        <groups>0</groups>
+        <Field_Delimited>
+          <name>image_id</name>
+          <field_number>1</field_number>
+          <data_type>ASCII_String</data_type>
+          <description>This field contains a HiRISE product
+          identifier.</description>
+        </Field_Delimited>
+        <Field_Delimited>
+          <name>predicted_landmark_class</name>
+          <field_number>2</field_number>
+          <data_type>ASCII_String</data_type>
+          <description>This field contains a landmark class name.
+          </description> 
+        </Field_Delimited>
+        <Field_Delimited>
+          <name>predicted_probability</name>
+          <field_number>3</field_number>
+          <data_type>ASCII_Real</data_type>
+          <description>This field contains the predicted probability
+          for the landmark class.</description>
+        </Field_Delimited>
+        <Field_Delimited>
+          <name>landmark_bounding_pixel_ul_y</name>
+          <field_number>4</field_number>
+          <data_type>ASCII_Real</data_type>
+          <description>This field contains the upper-left y
+          coordinate for the landmark bounding box.
+          </description>
+        </Field_Delimited>
+        <Field_Delimited>
+          <name>landmark_bounding_pixel_ul_x</name>
+          <field_number>5</field_number>
+          <data_type>ASCII_Real</data_type>
+          <description>This field contains the upper-left x
+          coordinate for the landmark bounding box.
+          </description>
+        </Field_Delimited>
+        <Field_Delimited>
+          <name>landmark_bounding_pixel_ur_y</name>
+          <field_number>6</field_number>
+          <data_type>ASCII_Real</data_type>
+          <description>This field contains the upper-right y
+          coordinate for the landmark bounding box.
+          </description>
+        </Field_Delimited>
+        <Field_Delimited>
+          <name>landmark_bounding_pixel_ur_x</name>
+          <field_number>7</field_number>
+          <data_type>ASCII_Real</data_type>
+          <description>This field contains the upper-right x
+          coordinate for the landmark bounding box.
+          </description>
+        </Field_Delimited>
+        <Field_Delimited>
+          <name>landmark_bounding_pixel_br_y</name>
+          <field_number>8</field_number>
+          <data_type>ASCII_Real</data_type>
+          <description>This field contains the bottom-right y
+          coordinate for the landmark bounding box.
+          </description>
+        </Field_Delimited>
+        <Field_Delimited>
+          <name>landmark_bounding_pixel_br_x</name>
+          <field_number>9</field_number>
+          <data_type>ASCII_Real</data_type>
+          <description>This field contains the bottom-right x
+          coordinate for the landmark bounding box.
+          </description>
+        </Field_Delimited>
+        <Field_Delimited>
+          <name>landmark_bounding_pixel_bl_y</name>
+          <field_number>10</field_number>
+          <data_type>ASCII_Real</data_type>
+          <description>This field contains the bottom-left y
+          coordinate for the landmark bounding box.
+          </description>
+        </Field_Delimited>
+        <Field_Delimited>
+          <name>landmark_bounding_pixel_bl_x</name>
+          <field_number>11</field_number>
+          <data_type>ASCII_Real</data_type>
+          <description>This field contains the bottom-left x
+          coordinate for the landmark bounding box.
+          </description>
+        </Field_Delimited>
+        <Field_Delimited>
+          <name>landmark_bounding_coordinates_ul_lon</name>
+          <field_number>12</field_number>
+          <data_type>ASCII_Real</data_type>
+          <description>This field contains the upper-left longitude 
+          for the landmark bounding box.
+          </description>
+        </Field_Delimited>
+        <Field_Delimited>
+          <name>landmark_bounding_coordinates_ul_lat</name>
+          <field_number>13</field_number>
+          <data_type>ASCII_Real</data_type>
+          <description>This field contains the upper-left latitude
+          for the landmark bounding box.
+          </description>
+        </Field_Delimited>
+        <Field_Delimited>
+          <name>landmark_bounding_coordinates_ur_lon</name>
+          <field_number>14</field_number>
+          <data_type>ASCII_Real</data_type>
+          <description>This field contains the upper-right longitude 
+          for the landmark bounding box.
+          </description>
+        </Field_Delimited>
+        <Field_Delimited>
+          <name>landmark_bounding_coordinates_ur_lat</name>
+          <field_number>15</field_number>
+          <data_type>ASCII_Real</data_type>
+          <description>This field contains the upper-right latitude
+          for the landmark bounding box.
+          </description>
+        </Field_Delimited>
+        <Field_Delimited>
+          <name>landmark_bounding_coordinates_br_lon</name>
+          <field_number>16</field_number>
+          <data_type>ASCII_Real</data_type>
+          <description>This field contains the bottom-right longitude 
+          for the landmark bounding box.
+          </description>
+        </Field_Delimited>
+        <Field_Delimited>
+          <name>landmark_bounding_coordinates_br_lat</name>
+          <field_number>17</field_number>
+          <data_type>ASCII_Real</data_type>
+          <description>This field contains the bottom-right latitude
+          for the landmark bounding box.
+          </description>
+        </Field_Delimited>
+        <Field_Delimited>
+          <name>landmark_bounding_coordinates_bl_lon</name>
+          <field_number>18</field_number>
+          <data_type>ASCII_Real</data_type>
+          <description>This field contains the bottom-left longitude 
+          for the landmark bounding box.
+          </description>
+        </Field_Delimited>
+        <Field_Delimited>
+          <name>landmark_bounding_coordinates_bl_lat</name>
+          <field_number>19</field_number>
+          <data_type>ASCII_Real</data_type>
+          <description>This field contains the bottom-left latitude
+          for the landmark bounding box.
+          </description>
+        </Field_Delimited>
+      </Record_Delimited>
+    </Table_Delimited>
+  </File_Area_Observational>
+</Product_Observational>
+            
