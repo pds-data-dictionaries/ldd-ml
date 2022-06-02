@@ -3,13 +3,13 @@ PDS Validate Tool Report
 
 Configuration:
    Version                       2.2.0
-   Date                          2022-05-21T00:39:44Z
+   Date                          2022-06-02T19:10:23Z
 
 Parameters:
-   Targets                       [file:/home/runner/work/ldd-ml/ldd-ml/test/test_mars_negdata_FAIL.xml]
+   Targets                       [file:/home/runner/work/ldd-ml/ldd-ml/test/test_mars_negdata_FAIL.xml, file:/home/runner/work/ldd-ml/ldd-ml/test/test_mars_nodata_FAIL.xml]
    Rule Type                     pds4.label
-   User Specified Schemas        [file:/home/runner/work/ldd-ml/ldd-ml/build/development/18c57eb1301c348d5ee4c733c657b03d8af0c519/1.17.0.0/PDS4_ML_1H00_1010.xsd, file:/tmp/PDS4_PDS_1H00.xsd]
-   User Specified Schematrons    [file:/home/runner/work/ldd-ml/ldd-ml/build/development/18c57eb1301c348d5ee4c733c657b03d8af0c519/1.17.0.0/PDS4_ML_1H00_1010.sch, file:/tmp/PDS4_PDS_1H00.sch]
+   User Specified Schemas        [file:/home/runner/work/ldd-ml/ldd-ml/build/development/2e2631d6489f5be19a72562bedc4a8a9796e30c0/1.17.0.0/PDS4_ML_1H00_1010.xsd, file:/tmp/PDS4_PDS_1H00.xsd]
+   User Specified Schematrons    [file:/home/runner/work/ldd-ml/ldd-ml/build/development/2e2631d6489f5be19a72562bedc4a8a9796e30c0/1.17.0.0/PDS4_ML_1H00_1010.sch, file:/tmp/PDS4_PDS_1H00.sch]
    Severity Level                WARNING
    Recurse Directories           true
    File Filters Used             [*.xml, *.XML]
@@ -28,14 +28,19 @@ Product Level Validation Results
       WARNING  [warning.label.missing_schematron_spec]   No schematron specification found in the label.
         1 product validation(s) completed
 
+  FAIL: file:/home/runner/work/ldd-ml/ldd-ml/test/test_mars_nodata_FAIL.xml
+      ERROR  [error.label.schema]   line 71, 32: cvc-complex-type.2.4.a: Invalid content was found starting with element '{"http://pds.nasa.gov/pds4/ml/v1":Test_Performance}'. One of '{"http://pds.nasa.gov/pds4/ml/v1":Training_Set}' is expected.
+      WARNING  [warning.label.missing_schematron_spec]   No schematron specification found in the label.
+        2 product validation(s) completed
+
 Summary:
 
-  2 error(s)
-  1 warning(s)
+  3 error(s)
+  2 warning(s)
 
   Product Validation Summary:
     0          product(s) passed
-    1          product(s) failed
+    2          product(s) failed
     0          product(s) skipped
 
   Referential Integrity Check Summary:
@@ -44,9 +49,9 @@ Summary:
     0          check(s) skipped
 
   Message Types:
-    2            error.label.schema
-    1            warning.label.missing_schematron_spec
+    3            error.label.schema
+    2            warning.label.missing_schematron_spec
 
 End of Report
-Completed execution in 4519 ms
+Completed execution in 4984 ms
 
