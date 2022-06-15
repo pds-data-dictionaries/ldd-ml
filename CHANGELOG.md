@@ -1,4 +1,6 @@
 # Changelog
+## 1.1.0.0
+- Updated steward name.
 
 ## 1.0.1.0
 - Address Oxygen-flagged errors.
