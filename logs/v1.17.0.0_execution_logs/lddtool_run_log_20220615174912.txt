@@ -1,0 +1,38 @@
+
+>>  INFO LDDTOOL Version: 10.0.0
+>>  INFO IM Version Id: 1.17.0.0
+>>  INFO IM Namespace Id: pds
+>>  INFO IM Label Version Id: 1.23
+>>  INFO Date: Wed Jun 15 17:49:12 UTC 2022
+>>  INFO PARENT_DIR: /tmp/lddtool-14.0.2
+>>  INFO SCRIPT_DIR: /tmp/lddtool-14.0.2/bin
+>>  INFO LIB_DIR: /tmp/lddtool-14.0.2/lib
+
+>>> INFO Init:  - Config.Properties Namespace Id Found:ml
+>>> INFO Init:  - Config.Properties Namespace Id Using:ml
+>>> INFO Init:  - LDD Dictionary_Type is Discipline
+>>> INFO Attribute: <data_set_size> - The default minimum value provided by the attribute's data type is being overridden with 1
+
+ -- LDDTool Execution Summary --
+     0 warning(s)
+     0 error(s)
+     0 fatal error(s)
+
+Input:
+
+     - IM Version: 1H00
+     - PDS4 Flag: true
+     - LDD Flag: true
+     - IM Version: true
+     - Export JSON Flag: true
+
+     - Ingest LDD(s): /home/runner/work/ldd-ml/ldd-ml/src/PDS4_ML_IngestLDD.xml
+
+Output:
+
+     - ./PDS4_ML_1H00_1100.xsd
+     - ./PDS4_ML_1H00_1100.sch
+     - ./PDS4_ML_1H00_1100.xml
+     - ./PDS4_ML_1H00_1100.JSON
+
+>>  INFO Exit(0)
