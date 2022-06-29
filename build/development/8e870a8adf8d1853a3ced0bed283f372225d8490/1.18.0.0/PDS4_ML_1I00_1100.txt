@@ -1,13 +1,13 @@
 PDS4 Local Data Dictionary Processing Report
 
 Configuration:
-   LDDTool Version        14.0.2
-   LDD Version Id:        1.0.1.0
+   LDDTool Version        14.0.13
+   LDD Version Id:        1.1.0.0
    LDD Label Version Id:  1.24
    LDD Discipline (T/F):  true
    LDD Namespace URL:     http://pds.nasa.gov/pds4/
    LDD URN Prefix:        urn:nasa:pds:
-   Time                   Wed Jun 15 16:27:02 UTC 2022
+   Time                   Wed Jun 29 20:06:19 UTC 2022
    Common Schema          [PDS4_PDS_1I00.xsd]
    Common Schematron      [PDS4_PDS_1I00.sch]
    IM Version Id:         1.18.0.0
@@ -40,8 +40,8 @@ Detailed validation messages
 
 Parsed Input - Header:
    LDD Name               Machine Learning Analysis
-   LDD Version            1.0.1.0
-   Full Name              Kiri L. Wagstaff
+   LDD Version            1.1.0.0
+   Full Name              Sara A. Bond
    Steward                img
    Namespace Id           ml
    Comment                This namespace enables the specification of metadata that
@@ -50,6 +50,9 @@ Parsed Input - Header:
     and evaluated. 
   
     ## CHANGE LOG ##
+    1.1.0.0
+    - Updated steward name.
+    
     1.0.1.0
     - Address Oxygen-flagged errors.
     - Make data_set_size a ASCII_NonNegative_Integer.
@@ -60,7 +63,7 @@ Parsed Input - Header:
     1.0.0.0
     - Initial release.
   
-   Last Modification Time 2021-11-05
+   Last Modification Time 2022-06-15
    PDS4 Merge Flag        false
 
 Parsed Input - Attributes:
