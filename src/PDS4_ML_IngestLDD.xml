@@ -240,8 +240,8 @@
     <submitter_name>Minh Le</submitter_name>
     <definition>The Training_Set class belongs to the Data_Set
     class family and contains attributes that describe the
-    size and version of the machine learning model training
-    set.</definition>
+    size and version of the data set used to train the machine
+    learning model.</definition>
     <element_flag>false</element_flag>
     <DD_Association>
       <identifier_reference>Data_Set</identifier_reference>
@@ -257,8 +257,9 @@
     <submitter_name>Minh Le</submitter_name>
     <definition>The Validation_Set class belongs to the Data_Set
     class family and contains attributes that describe the
-    size and version of the machine learning model validation
-    set. </definition>
+    size and version of the data set used to validate the machine
+    learning model (e.g., to choose the best
+    hyperparameters).</definition> 
     <element_flag>false</element_flag>
     <DD_Association>
       <identifier_reference>Data_Set</identifier_reference>
@@ -274,7 +275,8 @@
     <submitter_name>Minh Le</submitter_name>
     <definition>The Test_Set class belongs to the Data_Set class
     family and contains attributes describing the size and version of
-    the machine learning model test set.</definition>
+    the data set used to test the machine learning model (i.e., in
+    terms of generalization to previously unseen data).</definition>
     <element_flag>false</element_flag>
     <DD_Association>
       <identifier_reference>Data_Set</identifier_reference>
