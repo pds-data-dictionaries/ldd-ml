@@ -34,7 +34,7 @@
     1.0.0.0
     - Initial release.
   </comment>
-  <last_modification_date_time>2022-06-15</last_modification_date_time>
+  <last_modification_date_time>2022-06-29</last_modification_date_time>
 
   <!-- Attributes -->
   
@@ -221,7 +221,7 @@
       <maximum_occurrences>1</maximum_occurrences>
     </DD_Association>
     <DD_Association>
-      <identifier_reference>data_set_size</identifier_reference>
+      <identifier_reference>data_set_count</identifier_reference>
       <reference_type>attribute_of</reference_type>
       <minimum_occurrences>1</minimum_occurrences>
       <maximum_occurrences>1</maximum_occurrences>
