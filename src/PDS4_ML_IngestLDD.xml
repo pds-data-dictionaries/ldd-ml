@@ -22,7 +22,8 @@
     ## CHANGE LOG ##
     1.1.0.0
     - Change data_set_size to data_set_count.
-    - Updated steward name.
+    - Expand attribute definitions.
+    - Update steward name.
     
     1.0.1.0
     - Address Oxygen-flagged errors.
@@ -80,7 +81,10 @@
     <submitter_name>Minh Le</submitter_name>
     <definition>The algorithm_learning_style attribute describes the
     type of learning style employed by the algorithm to solve a
-    problem.</definition> 
+    problem.  Specifically, the learning style depends on whether
+    labeled or unlabeled data was employed to train the model.
+    Labeled data includes observations that are associated with a
+    desired output such as a class or numeric value.</definition> 
     <DD_Value_Domain>
       <enumeration_flag>true</enumeration_flag>
       <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
@@ -162,7 +166,9 @@
     <submitter_name>Kiri L. Wagstaff</submitter_name>
     <definition>The performance_score attribute reports the numeric
     score the model achieved using performance_measure on the test
-    set.</definition> 
+    set.  Values are not constrained since the measure may not be a
+    strict metric.  Examples could include accuracy, loss, runtime,
+    memory consumption, etc.</definition> 
     <DD_Value_Domain>
       <enumeration_flag>false</enumeration_flag>
       <value_data_type>ASCII_Real</value_data_type>
