@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!-- PDS4 XML/Schema for Name Space Id:ml  Version:1.1.0.0 - Thu Jun 30 01:45:45 UTC 2022 -->
+  <!-- PDS4 XML/Schema for Name Space Id:ml  Version:1.1.0.0 - Thu Jun 30 17:36:20 UTC 2022 -->
   <!-- Generated from the PDS4 Information Model Version 1.17.0.0 - System Build 12.0 -->
   <!-- *** This PDS4 product schema is an operational deliverable. *** -->
   <!--                                                                           -->
@@ -27,7 +27,8 @@ This namespace enables the specification of metadata that
     ## CHANGE LOG ##
     1.1.0.0
     - Change data_set_size to data_set_count.
-    - Updated steward name.
+    - Expand attribute definitions.
+    - Update steward name.
     
     1.0.1.0
     - Address Oxygen-flagged errors.
@@ -102,7 +103,9 @@ This namespace enables the specification of metadata that
     <xs:annotation>
       <xs:documentation>The Test_Set class belongs to the Data_Set class
         family and contains attributes describing the size and version
-        of the machine learning model test set.</xs:documentation>
+        of the data set used to test the machine learning model (i.e.,
+        in terms of generalization to previously unseen
+        data).</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:restriction base="ml:Data_Set">
@@ -137,8 +140,8 @@ This namespace enables the specification of metadata that
     <xs:annotation>
       <xs:documentation>The Training_Set class belongs to the Data_Set
         class family and contains attributes that describe the size and
-        version of the machine learning model training
-        set.</xs:documentation>
+        version of the data set used to train the machine learning
+        model.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:restriction base="ml:Data_Set">
@@ -154,8 +157,9 @@ This namespace enables the specification of metadata that
     <xs:annotation>
       <xs:documentation>The Validation_Set class belongs to the Data_Set
         class family and contains attributes that describe the size and
-        version of the machine learning model validation set.
-        </xs:documentation>
+        version of the data set used to validate the machine learning
+        model (e.g., to choose the best
+        hyperparameters).</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:restriction base="ml:Data_Set">
@@ -179,7 +183,11 @@ This namespace enables the specification of metadata that
     <xs:annotation>
       <xs:documentation>The algorithm_learning_style attribute describes
         the type of learning style employed by the algorithm to solve a
-        problem.</xs:documentation>
+        problem. Specifically, the learning style depends on whether
+        labeled or unlabeled data was employed to train the model.
+        Labeled data includes observations that are associated with a
+        desired output such as a class or numeric
+        value.</xs:documentation>
     </xs:annotation>
     <xs:restriction base="pds:ASCII_Short_String_Collapsed">
      <xs:minLength value="1"/>
@@ -250,7 +258,9 @@ This namespace enables the specification of metadata that
     <xs:annotation>
       <xs:documentation>The performance_score attribute reports the
         numeric score the model achieved using performance_measure on
-        the test set.</xs:documentation>
+        the test set. Values are not constrained since the measure may
+        not be a strict metric. Examples could include accuracy, loss,
+        runtime, memory consumption, etc.</xs:documentation>
     </xs:annotation>
     <xs:restriction base="pds:ASCII_Real">
      <xs:minInclusive value="-1.7976931348623157e308"/>
