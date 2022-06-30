@@ -3,19 +3,22 @@
 >>  INFO IM Version Id: 1.18.0.0
 >>  INFO IM Namespace Id: pds
 >>  INFO IM Label Version Id: 1.24
->>  INFO Date: Wed Jun 29 20:06:19 UTC 2022
+>>  INFO Date: Thu Jun 30 01:36:44 UTC 2022
 >>  INFO PARENT_DIR: /tmp/lddtool-14.0.13
 >>  INFO SCRIPT_DIR: /tmp/lddtool-14.0.13/bin
 >>  INFO LIB_DIR: /tmp/lddtool-14.0.13/lib
 
+>>> ERROR Class:0001_NASA_PDS_1.ml.Data_Set  Association:data_set_size  Attribute: data_set_size - Missing Attribute
+>>> ERROR Association: data_set_size - Could not find referenced attribute - Reference Type: attribute_of
 >>> INFO Init:  - Config.Properties Namespace Id Found:ml
 >>> INFO Init:  - Config.Properties Namespace Id Using:ml
 >>> INFO Init:  - LDD Dictionary_Type is Discipline
->>> INFO Attribute: <data_set_size> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> INFO Attribute: <data_set_count> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> WARNING Attribute: <data_set_count> - This local attribute was not used in an Association.
 
  -- LDDTool Execution Summary --
-     0 warning(s)
-     0 error(s)
+     1 warning(s)
+     2 error(s)
      0 fatal error(s)
 
 Input:
@@ -34,4 +37,4 @@ Output:
      - ./PDS4_ML_1I00_1100.xml
      - ./PDS4_ML_1I00_1100.JSON
 
->>  INFO Exit(0)
+>>  INFO Exit(1)
