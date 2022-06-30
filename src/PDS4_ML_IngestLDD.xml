@@ -11,7 +11,7 @@
   <name>Machine Learning Analysis</name>
   <ldd_version_id>1.1.0.0</ldd_version_id>
   <dictionary_type>Discipline</dictionary_type>
-  <full_name>Kiri L. Wagstaff</full_name>
+  <full_name>Sara A. Bond</full_name>
   <steward_id>img</steward_id>
   <namespace_id>ml</namespace_id>
   <comment>This namespace enables the specification of metadata that
@@ -22,6 +22,7 @@
     ## CHANGE LOG ##
     1.1.0.0
     - Change data_set_size to data_set_count.
+    - Updated steward name.
     
     1.0.1.0
     - Address Oxygen-flagged errors.

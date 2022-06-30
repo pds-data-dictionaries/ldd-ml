@@ -1,4 +1,6 @@
 # Changelog
+## 1.1.0.0
+- Updated steward name.
 
 ## 1.1.0.0
 - Change data_set_size to data_set_count.
