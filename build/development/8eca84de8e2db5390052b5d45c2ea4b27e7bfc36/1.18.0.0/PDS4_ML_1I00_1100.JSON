@@ -2,9 +2,9 @@
   {
     "dataDictionary": {
       "Title": "PDS4 Data Dictionary" ,
-      "IM Version": "1.17.0.0" ,
-      "LDD Version": "1.0.1.0" ,
-      "Date": "2022-05-20T17:38:55" ,
+      "IM Version": "1.18.0.0" ,
+      "LDD Version": "1.1.0.0" ,
+      "Date": "2022-06-30T10:35:18" ,
       "Description": "This document is a dump of the contents of the PDS4 Data Dictionary" ,
       "namespaces": ["pds:", "ml:"] ,
       "classDictionary": [
@@ -37,8 +37,8 @@
               }
             }
            , {"association": {
-                "identifier": "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_size" ,
-                "title": "data_set_size" ,
+                "identifier": "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_count" ,
+                "title": "data_set_count" ,
                 "assocType": "attribute_of" ,
                 "isAttribute": "true" ,
                 "isChoice": "false" ,
@@ -48,7 +48,7 @@
                 "maximumCardinality": "1" ,
                 "classOrder": "1020" ,
                 "attributeId": [
-                  "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_size"
+                  "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_count"
                  ]
               }
             }
@@ -222,7 +222,7 @@
             "versionId": "1.0.0.0" ,
             "isAbstract": "false" ,
             "isDeprecated": "false" ,
-            "description": "The Test_Set class belongs to the Data_Set class family and contains attributes describing the size and version of the machine learning model test set."
+            "description": "The Test_Set class belongs to the Data_Set class family and contains attributes describing the size and version of the data set used to test the machine learning model (i.e., in terms of generalization to previously unseen data)."
               , "associationList": [
              {"association": {
                 "identifier": "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_version_id" ,
@@ -241,8 +241,8 @@
               }
             }
            , {"association": {
-                "identifier": "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_size" ,
-                "title": "data_set_size" ,
+                "identifier": "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_count" ,
+                "title": "data_set_count" ,
                 "assocType": "attribute_of" ,
                 "isAttribute": "true" ,
                 "isChoice": "false" ,
@@ -252,7 +252,7 @@
                 "maximumCardinality": "1" ,
                 "classOrder": "1020" ,
                 "attributeId": [
-                  "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_size"
+                  "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_count"
                  ]
               }
             }
@@ -396,7 +396,7 @@
             "versionId": "1.0.0.0" ,
             "isAbstract": "false" ,
             "isDeprecated": "false" ,
-            "description": "The Training_Set class belongs to the Data_Set class family and contains attributes that describe the size and version of the machine learning model training set."
+            "description": "The Training_Set class belongs to the Data_Set class family and contains attributes that describe the size and version of the data set used to train the machine learning model."
               , "associationList": [
              {"association": {
                 "identifier": "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_version_id" ,
@@ -415,8 +415,8 @@
               }
             }
            , {"association": {
-                "identifier": "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_size" ,
-                "title": "data_set_size" ,
+                "identifier": "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_count" ,
+                "title": "data_set_count" ,
                 "assocType": "attribute_of" ,
                 "isAttribute": "true" ,
                 "isChoice": "false" ,
@@ -426,7 +426,7 @@
                 "maximumCardinality": "1" ,
                 "classOrder": "1020" ,
                 "attributeId": [
-                  "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_size"
+                  "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_count"
                  ]
               }
             }
@@ -443,7 +443,7 @@
             "versionId": "1.0.0.0" ,
             "isAbstract": "false" ,
             "isDeprecated": "false" ,
-            "description": "The Validation_Set class belongs to the Data_Set class family and contains attributes that describe the size and version of the machine learning model validation set. "
+            "description": "The Validation_Set class belongs to the Data_Set class family and contains attributes that describe the size and version of the data set used to validate the machine learning model (e.g., to choose the best hyperparameters)."
               , "associationList": [
              {"association": {
                 "identifier": "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_version_id" ,
@@ -462,8 +462,8 @@
               }
             }
            , {"association": {
-                "identifier": "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_size" ,
-                "title": "data_set_size" ,
+                "identifier": "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_count" ,
+                "title": "data_set_count" ,
                 "assocType": "attribute_of" ,
                 "isAttribute": "true" ,
                 "isChoice": "false" ,
@@ -473,7 +473,7 @@
                 "maximumCardinality": "1" ,
                 "classOrder": "1020" ,
                 "attributeId": [
-                  "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_size"
+                  "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_count"
                  ]
               }
             }
@@ -484,13 +484,13 @@
     , "attributeDictionary": [
         {
           "attribute": {
-            "identifier": "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_size" ,
-            "title": "data_set_size" ,
+            "identifier": "0001_NASA_PDS_1.ml.Data_Set.ml.data_set_count" ,
+            "title": "data_set_count" ,
             "registrationAuthorityId": "0001_NASA_PDS_1" ,
             "nameSpaceId": "ml" ,
             "steward": "img" ,
-            "versionId": "1.17" ,
-            "description": "The data_set_size attribute provides the number of items in the data set." ,
+            "versionId": "1.18" ,
+            "description": "The data_set_count attribute provides the number of items in the data set." ,
             "isNillable": "false" ,
             "isEnumerated": "false" ,
             "isDeprecated": "false" ,
@@ -514,7 +514,7 @@
             "registrationAuthorityId": "0001_NASA_PDS_1" ,
             "nameSpaceId": "ml" ,
             "steward": "img" ,
-            "versionId": "1.17" ,
+            "versionId": "1.18" ,
             "description": "The data_set_version_id attribute specifies the data set version number." ,
             "isNillable": "false" ,
             "isEnumerated": "false" ,
@@ -539,8 +539,8 @@
             "registrationAuthorityId": "0001_NASA_PDS_1" ,
             "nameSpaceId": "ml" ,
             "steward": "img" ,
-            "versionId": "1.17" ,
-            "description": "The algorithm_learning_style attribute describes the type of learning style employed by the algorithm to solve a problem." ,
+            "versionId": "1.18" ,
+            "description": "The algorithm_learning_style attribute describes the type of learning style employed by the algorithm to solve a problem. Specifically, the learning style depends on whether labeled or unlabeled data was employed to train the model. Labeled data includes observations that are associated with a desired output such as a class or numeric value." ,
             "isNillable": "false" ,
             "isEnumerated": "true" ,
             "isDeprecated": "false" ,
@@ -584,7 +584,7 @@
             "registrationAuthorityId": "0001_NASA_PDS_1" ,
             "nameSpaceId": "ml" ,
             "steward": "img" ,
-            "versionId": "1.17" ,
+            "versionId": "1.18" ,
             "description": "The algorithm_name attribute specifies the name of the algorithm used." ,
             "isNillable": "false" ,
             "isEnumerated": "false" ,
@@ -609,7 +609,7 @@
             "registrationAuthorityId": "0001_NASA_PDS_1" ,
             "nameSpaceId": "ml" ,
             "steward": "img" ,
-            "versionId": "1.17" ,
+            "versionId": "1.18" ,
             "description": "The algorithm_type attribute describes the kind of algorithm used, such as a regression model, neural network, tree, etc." ,
             "isNillable": "false" ,
             "isEnumerated": "true" ,
@@ -642,7 +642,7 @@
             "registrationAuthorityId": "0001_NASA_PDS_1" ,
             "nameSpaceId": "ml" ,
             "steward": "img" ,
-            "versionId": "1.17" ,
+            "versionId": "1.18" ,
             "description": "The performance_measure attribute specifies the name of the measure (or metric) used to report performance of the model on the test set." ,
             "isNillable": "false" ,
             "isEnumerated": "false" ,
@@ -667,8 +667,8 @@
             "registrationAuthorityId": "0001_NASA_PDS_1" ,
             "nameSpaceId": "ml" ,
             "steward": "img" ,
-            "versionId": "1.17" ,
-            "description": "The performance_score attribute reports the numeric score the model achieved using performance_measure on the test set." ,
+            "versionId": "1.18" ,
+            "description": "The performance_score attribute reports the numeric score the model achieved using performance_measure on the test set. Values are not constrained since the measure may not be a strict metric. Examples could include accuracy, loss, runtime, memory consumption, etc." ,
             "isNillable": "false" ,
             "isEnumerated": "false" ,
             "isDeprecated": "false" ,
@@ -692,7 +692,7 @@
             "registrationAuthorityId": "0001_NASA_PDS_1" ,
             "nameSpaceId": "ml" ,
             "steward": "img" ,
-            "versionId": "1.17" ,
+            "versionId": "1.18" ,
             "description": "The trained_model_name attribute specifies the name of the model used." ,
             "isNillable": "false" ,
             "isEnumerated": "false" ,
@@ -717,7 +717,7 @@
             "registrationAuthorityId": "0001_NASA_PDS_1" ,
             "nameSpaceId": "ml" ,
             "steward": "img" ,
-            "versionId": "1.17" ,
+            "versionId": "1.18" ,
             "description": "The trained_model_version_id attribute specifies the trained model version number." ,
             "isNillable": "false" ,
             "isEnumerated": "false" ,

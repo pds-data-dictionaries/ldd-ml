@@ -1,13 +1,13 @@
 PDS4 Local Data Dictionary Processing Report
 
 Configuration:
-   LDDTool Version        14.0.1
-   LDD Version Id:        1.0.1.0
+   LDDTool Version        14.0.13
+   LDD Version Id:        1.1.0.0
    LDD Label Version Id:  1.24
    LDD Discipline (T/F):  true
    LDD Namespace URL:     http://pds.nasa.gov/pds4/
    LDD URN Prefix:        urn:nasa:pds:
-   Time                   Sat May 21 00:39:02 UTC 2022
+   Time                   Thu Jun 30 17:35:17 UTC 2022
    Common Schema          [PDS4_PDS_1I00.xsd]
    Common Schematron      [PDS4_PDS_1I00.sch]
    IM Version Id:         1.18.0.0
@@ -40,8 +40,8 @@ Detailed validation messages
 
 Parsed Input - Header:
    LDD Name               Machine Learning Analysis
-   LDD Version            1.0.1.0
-   Full Name              Kiri L. Wagstaff
+   LDD Version            1.1.0.0
+   Full Name              Sara A. Bond
    Steward                img
    Namespace Id           ml
    Comment                This namespace enables the specification of metadata that
@@ -50,6 +50,11 @@ Parsed Input - Header:
     and evaluated. 
   
     ## CHANGE LOG ##
+    1.1.0.0
+    - Change data_set_size to data_set_count.
+    - Expand attribute definitions.
+    - Update steward name.
+    
     1.0.1.0
     - Address Oxygen-flagged errors.
     - Make data_set_size a ASCII_NonNegative_Integer.
@@ -60,15 +65,15 @@ Parsed Input - Header:
     1.0.0.0
     - Initial release.
   
-   Last Modification Time 2021-11-05
+   Last Modification Time 2022-06-30
    PDS4 Merge Flag        false
 
 Parsed Input - Attributes:
 
-   name                   data_set_size
+   name                   data_set_count
    version                1.18
    value data type        ASCII_NonNegative_Integer
-   description            The data_set_size attribute provides the number of items in the data set.
+   description            The data_set_count attribute provides the number of items in the data set.
    minimum value          1
 
    name                   data_set_version_id
@@ -79,7 +84,7 @@ Parsed Input - Attributes:
    name                   algorithm_learning_style
    version                1.18
    value data type        ASCII_Short_String_Collapsed
-   description            The algorithm_learning_style attribute describes the type of learning style employed by the algorithm to solve a problem.
+   description            The algorithm_learning_style attribute describes the type of learning style employed by the algorithm to solve a problem. Specifically, the learning style depends on whether labeled or unlabeled data was employed to train the model. Labeled data includes observations that are associated with a desired output such as a class or numeric value.
 
    name                   algorithm_type
    version                1.18
@@ -99,7 +104,7 @@ Parsed Input - Attributes:
    name                   performance_score
    version                1.18
    value data type        ASCII_Real
-   description            The performance_score attribute reports the numeric score the model achieved using performance_measure on the test set.
+   description            The performance_score attribute reports the numeric score the model achieved using performance_measure on the test set. Values are not constrained since the measure may not be a strict metric. Examples could include accuracy, loss, runtime, memory consumption, etc.
 
    name                   trained_model_version_id
    version                1.18
@@ -126,13 +131,13 @@ Parsed Input - Classes:
       maximum occurrences   1
       reference type        attribute_of
 
-      local identifier      data_set_size
+      local identifier      data_set_count
       minimum occurrences   1
       maximum occurrences   1
       reference type        attribute_of
 
    name                   Training_Set
-   description            The Training_Set class belongs to the Data_Set class family and contains attributes that describe the size and version of the machine learning model training set.
+   description            The Training_Set class belongs to the Data_Set class family and contains attributes that describe the size and version of the data set used to train the machine learning model.
    is abstract            false
    is choice              false
    subclass of            Data_Set
@@ -145,7 +150,7 @@ Parsed Input - Classes:
       reference type        parent_of
 
    name                   Validation_Set
-   description            The Validation_Set class belongs to the Data_Set class family and contains attributes that describe the size and version of the machine learning model validation set. 
+   description            The Validation_Set class belongs to the Data_Set class family and contains attributes that describe the size and version of the data set used to validate the machine learning model (e.g., to choose the best hyperparameters).
    is abstract            false
    is choice              false
    subclass of            Data_Set
@@ -158,7 +163,7 @@ Parsed Input - Classes:
       reference type        parent_of
 
    name                   Test_Set
-   description            The Test_Set class belongs to the Data_Set class family and contains attributes describing the size and version of the machine learning model test set.
+   description            The Test_Set class belongs to the Data_Set class family and contains attributes describing the size and version of the data set used to test the machine learning model (i.e., in terms of generalization to previously unseen data).
    is abstract            false
    is choice              false
    subclass of            Data_Set

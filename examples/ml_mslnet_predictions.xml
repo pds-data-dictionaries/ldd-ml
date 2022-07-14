@@ -130,15 +130,15 @@
           </ml:Machine_Learning_Algorithm>
           <ml:Training_Set>
             <ml:data_set_version_id>1.0</ml:data_set_version_id>
-            <ml:data_set_size>2000</ml:data_set_size>
+            <ml:data_set_count>2000</ml:data_set_count>
           </ml:Training_Set>
           <ml:Validation_Set>
             <ml:data_set_version_id>1.0</ml:data_set_version_id>
-            <ml:data_set_size>300</ml:data_set_size>
+            <ml:data_set_count>300</ml:data_set_count>
           </ml:Validation_Set>
           <ml:Test_Set>
             <ml:data_set_version_id>1.0</ml:data_set_version_id>
-            <ml:data_set_size>600</ml:data_set_size>
+            <ml:data_set_count>600</ml:data_set_count>
           </ml:Test_Set>
           <ml:Test_Performance>
             <ml:performance_measure>Test accuracy</ml:performance_measure>
