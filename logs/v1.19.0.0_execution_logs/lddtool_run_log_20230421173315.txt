@@ -1,0 +1,46 @@
+
+>>  INFO LDDTOOL Version: 14.2.2
+>>  INFO IM Version Id: 1.19.0.0
+>>  INFO IM Namespace Id: pds
+>>  INFO IM Label Version Id: 1.25
+>>  INFO Date: Fri Apr 21 17:33:16 UTC 2023
+>>  INFO PARENT_DIR: /tmp/lddtool-14.2.2
+>>  INFO SCRIPT_DIR: /tmp/lddtool-14.2.2/bin
+>>  INFO LIB_DIR: /tmp/lddtool-14.2.2/lib
+
+>>> ERROR Class:0001_NASA_PDS_1.ml.Calibration_Method  Association:ml:calibration_method_architecture_description  Attribute: ml:calibration_method_architecture_description - Missing Attribute
+>>> ERROR Association: ml:calibration_method_architecture_description - Could not find referenced attribute - Reference Type: attribute_of
+>>> ERROR Class:  - At least one value for pds:local_reference_type or pds:reference_type must be defined for ml:Trained_Model_Architecture/pds:Internal_Reference.
+>>> INFO Init:  - Config.Properties Namespace Id Found:ml
+>>> INFO Init:  - Config.Properties Namespace Id Using:ml
+>>> INFO Init:  - LDD Dictionary_Type is Discipline
+>>> INFO Attribute: <augmentation_method_parameter> - A 'nillable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <augmentation_method_parameter_value> - A 'nillable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <preprocessing_method_parameter> - A 'nillable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <preprocessing_method_parameter_value> - A 'nillable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <data_set_count> - The default minimum value provided by the attribute's data type is being overridden with 1
+>>> WARNING Attribute: <calibration_method_description> - This local attribute was not used in an Association.
+
+ -- LDDTool Execution Summary --
+     1 warning(s)
+     3 error(s)
+     0 fatal error(s)
+
+Input:
+
+     - IM Version: 1J00
+     - PDS4 Flag: true
+     - LDD Flag: true
+     - IM Version: true
+     - Export JSON Flag: true
+
+     - Ingest LDD(s): /home/runner/work/ldd-ml/ldd-ml/src/PDS4_ML_IngestLDD.xml
+
+Output:
+
+     - ./PDS4_ML_1J00_1100.xsd
+     - ./PDS4_ML_1J00_1100.sch
+     - ./PDS4_ML_1J00_1100.xml
+     - ./PDS4_ML_1J00_1100.JSON
+
+>>  INFO Exit(1)
