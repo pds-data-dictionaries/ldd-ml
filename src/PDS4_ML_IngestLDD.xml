@@ -944,7 +944,7 @@
     <local_identifier>Trained_Model_Architecture</local_identifier>
     <submitter_name>Sara Bond</submitter_name>
     <definition>The Trained_Model_Architecture class is a container
-      for classes and and attributes describing the trained model architecture. An internal reference to a citation for the
+      for classes and and attributes describing the trained model architecture. An internal reference to the
       architecture is optional.</definition> 
     <element_flag>false</element_flag>
     <DD_Association>
@@ -966,7 +966,7 @@
       <maximum_occurrences>*</maximum_occurrences>
     </DD_Association>
     <DD_Association>
-      <!-- Reference for the architecture citation -->
+      <!-- Reference for the architecture -->
       <identifier_reference>pds.Internal_Reference</identifier_reference>
       <reference_type>component_of</reference_type>
       <minimum_occurrences>0</minimum_occurrences>
@@ -991,7 +991,7 @@
       <maximum_occurrences>1</maximum_occurrences>
     </DD_Association>
     <DD_Association>
-      <identifier_reference>calibration_method_architecture_description</identifier_reference>
+      <identifier_reference>calibration_method_description</identifier_reference>
       <reference_type>attribute_of</reference_type>
       <minimum_occurrences>1</minimum_occurrences>
       <maximum_occurrences>1</maximum_occurrences>
@@ -1069,6 +1069,15 @@
     </DD_Association>
   </DD_Class>
   
+  <DD_Rule>
+    <local_identifier>reference_type_check_trained_model_architecture</local_identifier>
+    <rule_context>ml:Trained_Model_Architecture/pds:Internal_Reference</rule_context>
+    <DD_Rule_Statement>
+      <rule_type>Assert</rule_type>
+      <rule_test>pds:reference_type = 'class_to_document'</rule_test>
+      <rule_message>In ml:Trained_Model_Architecture, Internal_Reference.reference_type must be equal to 'class_to_document'.</rule_message>
+    </DD_Rule_Statement>
+  </DD_Rule>
   
 </Ingest_LDD>
 
