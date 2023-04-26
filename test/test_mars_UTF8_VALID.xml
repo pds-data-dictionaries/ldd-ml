@@ -68,6 +68,31 @@
               <pds:description>AlexNet citation</pds:description>
             </pds:External_Reference>
           </ml:Machine_Learning_Algorithm>
+          <ml:Optimization_Algorithm>
+            <ml:optimization_algorithm_name>Stochastic gradient descent</ml:optimization_algorithm_name>
+            <ml:optimization_algorithm_description>Stochastic gradient descent (often abbreviated SGD) 
+              is an iterative method for optimizing an objective function 
+              with suitable smoothness properties. It can be regarded as a 
+              stochastic approximation of gradient descent optimization, since it replaces 
+              the actual gradient by an estimate thereof.</ml:optimization_algorithm_description>
+            <ml:optimization_algorithm_parameter>conv1 learning rate</ml:optimization_algorithm_parameter>
+            <ml:optimization_algorithm_parameter_value>0.001</ml:optimization_algorithm_parameter_value>
+          </ml:Optimization_Algorithm>
+          <ml:Trained_Model_Hyperparameter>
+            <ml:trained_model_hyperparameter_name>batch size</ml:trained_model_hyperparameter_name>
+            <ml:trained_model_hyperparameter_value>256</ml:trained_model_hyperparameter_value>
+          </ml:Trained_Model_Hyperparameter>
+          <ml:Trained_Model_File>
+            <ml:trained_model_file_name>MSLNet v1 model file</ml:trained_model_file_name>
+            <ml:trained_model_file_description>MSLNet v1 model file in Caffe format</ml:trained_model_file_description>
+            <pds:External_Reference>
+              <pds:doi>XX.XXXX/XXXX.XXXX.XXXX</pds:doi>
+              <pds:reference_text>
+                MSLNet v1 model file in PDS Annex
+              </pds:reference_text>
+              <pds:description>MSLNet v1 model file in PDS Annex</pds:description>
+            </pds:External_Reference>
+          </ml:Trained_Model_File>
           <ml:Training_Set>
             <ml:data_set_version_id>1.0</ml:data_set_version_id>
             <ml:data_set_count>5000</ml:data_set_count>
