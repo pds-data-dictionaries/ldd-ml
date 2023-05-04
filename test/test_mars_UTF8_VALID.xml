@@ -53,6 +53,7 @@
         <ml:Trained_Machine_Learning_Model>
           <ml:trained_model_version_id>2.0</ml:trained_model_version_id>
           <ml:trained_model_name>TestNet</ml:trained_model_name>
+          <ml:trained_model_creation_date>2023-05-02</ml:trained_model_creation_date>
           <ml:Machine_Learning_Algorithm>
             <ml:algorithm_learning_style>Supervised_Learning</ml:algorithm_learning_style>
             <ml:algorithm_type>Convolutional_Neural_Network_Classifier</ml:algorithm_type>
@@ -84,6 +85,30 @@
             <ml:performance_measure>Test accuracy</ml:performance_measure>
             <ml:performance_score>0.93</ml:performance_score>
           </ml:Test_Performance>
+          <ml:Optimization_Algorithm>
+            <ml:optimization_algorithm_name>Stochastic gradient descent</ml:optimization_algorithm_name>
+            <ml:optimization_algorithm_description>Stochastic gradient descent (SGD) is an iterative method
+              for optimizing an objective function with suitable smoothness properties. It can be a stochastic 
+              approximation of gradient descent optimization since it replaces the actual gradient 
+              by an estimate.</ml:optimization_algorithm_description>
+            <ml:optimization_algorithm_parameter>conv1 learning rate</ml:optimization_algorithm_parameter>
+            <ml:optimization_algorithm_parameter_value>0.001</ml:optimization_algorithm_parameter_value>
+          </ml:Optimization_Algorithm>
+          <ml:Trained_Model_Hyperparameter>
+            <ml:trained_model_hyperparameter_name>batch size</ml:trained_model_hyperparameter_name>
+            <ml:trained_model_hyperparameter_value>256</ml:trained_model_hyperparameter_value>
+          </ml:Trained_Model_Hyperparameter>
+          <ml:Trained_Model_File>
+            <ml:trained_model_file_name>MSLNet v1 model file</ml:trained_model_file_name>
+            <ml:trained_model_file_description>MSLNet v1 model file in Caffe format</ml:trained_model_file_description>
+            <pds:External_Reference>
+              <pds:doi>10.5555/2999135</pds:doi>
+              <pds:reference_text>
+                MSLNet v1 model file in PDS Annex
+              </pds:reference_text>
+              <pds:description>MSLNet v1 model file in PDS Annex</pds:description>
+            </pds:External_Reference>
+          </ml:Trained_Model_File>
         </ml:Trained_Machine_Learning_Model>
 
       </ml:Machine_Learning>

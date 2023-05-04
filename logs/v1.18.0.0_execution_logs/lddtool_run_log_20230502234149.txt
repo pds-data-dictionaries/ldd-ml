@@ -1,16 +1,20 @@
 
->>  INFO LDDTOOL Version: 14.1.2
+>>  INFO LDDTOOL Version: 14.2.2
 >>  INFO IM Version Id: 1.18.0.0
 >>  INFO IM Namespace Id: pds
 >>  INFO IM Label Version Id: 1.24
->>  INFO Date: Thu Oct 20 21:52:38 UTC 2022
->>  INFO PARENT_DIR: /tmp/lddtool-14.1.2
->>  INFO SCRIPT_DIR: /tmp/lddtool-14.1.2/bin
->>  INFO LIB_DIR: /tmp/lddtool-14.1.2/lib
+>>  INFO Date: Tue May 02 23:41:50 UTC 2023
+>>  INFO PARENT_DIR: /tmp/lddtool-14.2.2
+>>  INFO SCRIPT_DIR: /tmp/lddtool-14.2.2/bin
+>>  INFO LIB_DIR: /tmp/lddtool-14.2.2/lib
 
 >>> INFO Init:  - Config.Properties Namespace Id Found:ml
 >>> INFO Init:  - Config.Properties Namespace Id Using:ml
 >>> INFO Init:  - LDD Dictionary_Type is Discipline
+>>> INFO Attribute: <augmentation_method_parameter> - A 'nillable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <augmentation_method_parameter_value> - A 'nillable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <preprocessing_method_parameter> - A 'nillable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <preprocessing_method_parameter_value> - A 'nillable' attribute was found that is not a required attribute in at least one class.
 >>> INFO Attribute: <data_set_count> - The default minimum value provided by the attribute's data type is being overridden with 1
 
  -- LDDTool Execution Summary --

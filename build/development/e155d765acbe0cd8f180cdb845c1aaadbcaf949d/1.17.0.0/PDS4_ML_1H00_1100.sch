@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!-- PDS4 Schematron for Name Space Id:ml  Version:1.1.0.0 - Thu Oct 20 21:52:38 UTC 2022 -->
-  <!-- Generated from the PDS4 Information Model Version 1.18.0.0 - System Build 12.1 -->
+  <!-- PDS4 Schematron for Name Space Id:ml  Version:1.1.0.0 - Tue May 02 23:41:51 UTC 2023 -->
+  <!-- Generated from the PDS4 Information Model Version 1.17.0.0 - System Build 12.0 -->
   <!-- *** This PDS4 schematron file is an operational deliverable. *** -->
 <sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
 
@@ -30,6 +30,13 @@
       <sch:assert test=". = ('Convolutional_Neural_Network_Classifier')">
         <title>ml:Machine_Learning_Algorithm/ml:algorithm_type/ml:algorithm_type</title>
         The attribute ml:Machine_Learning_Algorithm/ml:algorithm_type must be equal to the value 'Convolutional_Neural_Network_Classifier'.</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:rule context="ml:Trained_Model_Architecture/pds:Internal_Reference">
+      <sch:assert test="pds:reference_type = 'class_to_document'">
+        <title>ml:Trained_Model_Architecture/pds:Internal_Reference/Rule</title>
+        In ml:Trained_Model_Architecture, Internal_Reference.reference_type must be equal to 'class_to_document'.</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

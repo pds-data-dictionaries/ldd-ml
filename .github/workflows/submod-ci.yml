@@ -11,6 +11,7 @@ on:
      paths:
        - src/**
        - .github/**
+       - test/**
        - pds4_versions.txt
    workflow_dispatch:
 
