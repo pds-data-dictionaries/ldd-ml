@@ -91,9 +91,11 @@
               for optimizing an objective function with suitable smoothness properties. It can be a stochastic 
               approximation of gradient descent optimization since it replaces the actual gradient 
               by an estimate.</ml:optimization_algorithm_description>
-            <ml:optimization_algorithm_parameter>conv1 learning rate</ml:optimization_algorithm_parameter>
-            <ml:optimization_algorithm_parameter_value>0.001</ml:optimization_algorithm_parameter_value>
           </ml:Optimization_Algorithm>
+          <ml:Optimization_Algorithm_Parameter>
+            <ml:optimization_algorithm_parameter_name>conv1 learning rate</ml:optimization_algorithm_parameter_name>
+            <ml:optimization_algorithm_parameter_value>0.001</ml:optimization_algorithm_parameter_value>
+          </ml:Optimization_Algorithm_Parameter>
           <ml:Trained_Model_Hyperparameter>
             <ml:trained_model_hyperparameter_name>batch size</ml:trained_model_hyperparameter_name>
             <ml:trained_model_hyperparameter_value>256</ml:trained_model_hyperparameter_value>
