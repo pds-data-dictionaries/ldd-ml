@@ -3,7 +3,7 @@
 >>  INFO IM Version Id: 1.20.0.0
 >>  INFO IM Namespace Id: pds
 >>  INFO IM Label Version Id: 1.26
->>  INFO Date: Fri May 19 00:10:23 UTC 2023
+>>  INFO Date: Thu Jun 15 22:36:10 UTC 2023
 >>  INFO PARENT_DIR: /tmp/lddtool-14.2.4
 >>  INFO SCRIPT_DIR: /tmp/lddtool-14.2.4/bin
 >>  INFO LIB_DIR: /tmp/lddtool-14.2.4/lib
@@ -11,9 +11,9 @@
 >>> INFO Init:  - Config.Properties Namespace Id Found:ml
 >>> INFO Init:  - Config.Properties Namespace Id Using:ml
 >>> INFO Init:  - LDD Dictionary_Type is Discipline
->>> INFO Attribute: <augmentation_method_parameter> - A 'nillable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <augmentation_method_parameter_name> - A 'nillable' attribute was found that is not a required attribute in at least one class.
 >>> INFO Attribute: <augmentation_method_parameter_value> - A 'nillable' attribute was found that is not a required attribute in at least one class.
->>> INFO Attribute: <preprocessing_method_parameter> - A 'nillable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <preprocessing_method_parameter_name> - A 'nillable' attribute was found that is not a required attribute in at least one class.
 >>> INFO Attribute: <preprocessing_method_parameter_value> - A 'nillable' attribute was found that is not a required attribute in at least one class.
 >>> INFO Attribute: <data_set_count> - The default minimum value provided by the attribute's data type is being overridden with 1
 
@@ -33,9 +33,9 @@ Input:
 
 Output:
 
-     - ./PDS4_ML_1K00_1200.xsd
-     - ./PDS4_ML_1K00_1200.sch
-     - ./PDS4_ML_1K00_1200.xml
-     - ./PDS4_ML_1K00_1200.JSON
+     - ./PDS4_ML_1K00_1210.xsd
+     - ./PDS4_ML_1K00_1210.sch
+     - ./PDS4_ML_1K00_1210.xml
+     - ./PDS4_ML_1K00_1210.JSON
 
 >>  INFO Exit(0)
