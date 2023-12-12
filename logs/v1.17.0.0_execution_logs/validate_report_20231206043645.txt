@@ -1,0 +1,64 @@
+
+PDS Validate Tool Report
+
+Configuration:
+   Version                       3.3.3
+   Date                          2023-12-06T04:36:47Z
+
+Parameters:
+   Targets                       [file:/home/runner/work/ldd-ml/ldd-ml/build/development/b3e7cb2653796329445b85ecabe09eee729b4235/1.17.0.0/PDS4_ML_1H00_1211.xml, file:/home/runner/work/ldd-ml/ldd-ml/test/test_mars_VALID.xml, file:/home/runner/work/ldd-ml/ldd-ml/test/test_mars_UTF8_VALID.xml]
+   Rule Type                     pds4.label
+   User Specified Schemas        [file:/home/runner/work/ldd-ml/ldd-ml/build/development/b3e7cb2653796329445b85ecabe09eee729b4235/1.17.0.0/PDS4_ML_1H00_1211.xsd, file:/tmp/PDS4_PDS_1H00.xsd]
+   User Specified Schematrons    [file:/home/runner/work/ldd-ml/ldd-ml/build/development/b3e7cb2653796329445b85ecabe09eee729b4235/1.17.0.0/PDS4_ML_1H00_1211.sch, file:/tmp/PDS4_PDS_1H00.sch]
+   Severity Level                WARNING
+   Recurse Directories           true
+   File Filters Used             [*.xml, *.XML]
+   Data Content Validation       off
+   Product Level Validation      on
+   Max Errors                    100000
+   Registered Contexts File      /tmp/validate-3.3.3/resources/registered_context_products.json
+
+
+
+Product Level Validation Results
+
+  PASS: file:/home/runner/work/ldd-ml/ldd-ml/build/development/b3e7cb2653796329445b85ecabe09eee729b4235/1.17.0.0/PDS4_ML_1H00_1211.xml
+        1 product validation(s) completed
+
+  FAIL: file:/home/runner/work/ldd-ml/ldd-ml/test/test_mars_VALID.xml
+      WARNING  [warning.label.schema]   Cannot check versioning because no Schema given.
+      ERROR  [error.label.schema]   line 94, 50: cvc-complex-type.2.4.d: Invalid content was found starting with element 'ml:optimization_algorithm_parameter'. No child element is expected at this point.
+      ERROR  [error.label.schema]   line 97, 44: cvc-complex-type.2.4.a: Invalid content was found starting with element '{"http://pds.nasa.gov/pds4/ml/v1":Trained_Model_Hyperparameter}'. One of '{"http://pds.nasa.gov/pds4/ml/v1":Optimization_Algorithm, "http://pds.nasa.gov/pds4/ml/v1":Optimization_Algorithm_Parameter}' is expected.
+      WARNING  [warning.label.missing_schematron_spec]   No schematron specification found in the label.
+        2 product validation(s) completed
+
+  FAIL: file:/home/runner/work/ldd-ml/ldd-ml/test/test_mars_UTF8_VALID.xml
+      WARNING  [warning.label.schema]   Cannot check versioning because no Schema given.
+      ERROR  [error.label.schema]   line 94, 50: cvc-complex-type.2.4.d: Invalid content was found starting with element 'ml:optimization_algorithm_parameter'. No child element is expected at this point.
+      ERROR  [error.label.schema]   line 97, 44: cvc-complex-type.2.4.a: Invalid content was found starting with element '{"http://pds.nasa.gov/pds4/ml/v1":Trained_Model_Hyperparameter}'. One of '{"http://pds.nasa.gov/pds4/ml/v1":Optimization_Algorithm, "http://pds.nasa.gov/pds4/ml/v1":Optimization_Algorithm_Parameter}' is expected.
+      WARNING  [warning.label.missing_schematron_spec]   No schematron specification found in the label.
+        3 product validation(s) completed
+
+Summary:
+
+  4 error(s)
+  4 warning(s)
+
+  Product Validation Summary:
+    1          product(s) passed
+    2          product(s) failed
+    0          product(s) skipped
+
+  Referential Integrity Check Summary:
+    0          check(s) passed
+    0          check(s) failed
+    0          check(s) skipped
+
+  Message Types:
+    4            error.label.schema
+    2            warning.label.schema
+    2            warning.label.missing_schematron_spec
+
+End of Report
+Completed execution in 4543 ms
+
