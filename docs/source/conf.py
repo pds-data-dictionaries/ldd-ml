@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Example Namespace'
-# copyright = overidden by CSS specified below
-author = 'NASA Planetary Data System'
+project = 'ML LDD'
+copyright = '2023, Sara'
+author = 'Sara'
 
 
 # -- General configuration ---------------------------------------------------
@@ -28,16 +28,6 @@ author = 'NASA Planetary Data System'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.autodoc',
-    'sphinx.ext.doctest',
-    'sphinx.ext.todo',
-    'sphinx.ext.viewcode',
-    'sphinx.ext.githubpages',
-    'sphinx.ext.autosummary',
-    'sphinx.ext.autosectionlabel',
-    'sphinx_rtd_theme',
-    'sphinxemoji.sphinxemoji',
-    'myst_parser'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -60,41 +50,3 @@ html_theme = 'sphinx_rtd_theme'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
-
-# -- Read the docs config -------
-
-html_logo = '_static/images/PDS_Planets.png'
-
-html_context = {
-    'display_github': True,
-    "github_user": "pds-data-dictionaries",
-    "github_repo": "ldd-template",
-    "github_version": "main/docs/source/"
-}
-
-html_css_files = [
-    'theme_overrides.css',
-]
-
-html_theme_options = {
-    'canonical_url': '',
-    'logo_only': False,
-    'display_version': True,
-    'prev_next_buttons_location': 'bottom',
-    'style_external_links': False,
-    # Toc options
-    'collapse_navigation': True,
-    'sticky_navigation': True,
-    'navigation_depth': 4,
-    'includehidden': True,
-    'titles_only': False
-}
-
-myst_enable_extensions = [
-    "deflist",
-    "fieldlist"
-]
-
-latex_elements = {
-    'maxlistdepth': '10'
-}
