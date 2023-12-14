@@ -80,7 +80,7 @@ VALID in their filenames are valid PDS4 labels.
 # Organization of Classes and Attributes
 
 ![Machine Learning Analysis Local Data Dictionary class
- hierarchy](ml_ldd_diagram_dec_2023.png)
+ hierarchy](ml_ldd_class_diagram_dec_2023.png)
 
 The Machine Learning Analysis Local Data Dictionary (henceforth the ML
 LDD) consists of fifteen classes.

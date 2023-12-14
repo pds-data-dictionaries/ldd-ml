@@ -3,21 +3,30 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Example Namespace Documentation
+Welcome to ML LDD's documentation!
 ===================================
 
-.. include:: intro.md
-
-             
 .. toctree::
-    :maxdepth: 3
-    :caption: User Guide
+   :maxdepth: 2
+   :caption: Machine Learning Local Data Dictionary:
 
-    user/user-guide
+   user-guide.rst
+   use-case-examples.rst
 
-    
-.. toctree::
-    :maxdepth: 3
-    :caption: Detailed Documentation
 
-    detailed/example
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+
+
+
+Copyright
+=========
+
+Copyright 2023, by the California Institute of Technology. ALL RIGHTS RESERVED.
+United States Government Sponsorship acknowledged. Any commercial use must be
+negotiated with the Office of Technology Transfer at the California Institute
+of Technology.
