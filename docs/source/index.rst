@@ -10,8 +10,8 @@ Welcome to ML LDD's documentation!
    :maxdepth: 2
    :caption: Machine Learning Local Data Dictionary:
 
-   user-guide.rst
-   use-case-examples.rst
+   user/user-guide.rst
+   user/use-case-examples.rst
 
 
 
