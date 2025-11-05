@@ -1,0 +1,39 @@
+
+>>  INFO LDDTOOL Version: 16.0.0
+>>  INFO IM Version Id: 1.25.0.0
+>>  INFO IM Namespace Id: pds
+>>  INFO IM Label Version Id: 1.0
+>>  INFO Date: Wed Nov 05 20:50:18 UTC 2025
+>>  INFO PARENT_DIR: /tmp/lddtool-16.0.0/Data/
+
+>>> INFO Init:  - Config.Properties Namespace Id Found:ml
+>>> INFO Init:  - Config.Properties Namespace Id Using:ml
+>>> INFO Init:  - LDD Dictionary_Type is Discipline
+>>> INFO Attribute: <augmentation_method_parameter> - A 'nillable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <augmentation_method_parameter_value> - A 'nillable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <preprocessing_method_parameter> - A 'nillable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <preprocessing_method_parameter_value> - A 'nillable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <data_set_count> - The default minimum value provided by the attribute's data type is being overridden with 1
+
+ -- LDDTool Execution Summary --
+     0 warning(s)
+     0 error(s)
+     0 fatal error(s)
+
+Input:
+
+     - IM Version: 1P00
+     - PDS4 Flag: true
+     - LDD Flag: true
+     - Export JSON Flag: true
+
+     - Ingest LDD(s): /home/runner/work/ldd-ml/ldd-ml/src/PDS4_ML_IngestLDD.xml
+
+Output:
+
+     - ./PDS4_ML_1P00_1211.xsd
+     - ./PDS4_ML_1P00_1211.sch
+     - ./PDS4_ML_1P00_1211.xml
+     - ./export/PDS4_PDS_1P00.JSON
+
+>>  INFO Exit(0)
